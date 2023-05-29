@@ -5,7 +5,7 @@ import VideoThumb from "@/public/images/hero-image-01.jpg";
 import ModalVideo from "@/components/modal-video";
 import BootstrapCarousel from "../public/Bootstrap";
 
-import DevOps from "@/public/images/devOps.png";
+import OpsFlow from "@/public/images/opsFlow.png";
 import classes from "./hero.module.scss";
 
 // import Slider from "react-slick";
@@ -88,15 +88,15 @@ export default function Hero() {
             </div> */}
               </div>
             </div>
-            {/* <div data-aos="fade-up">
+            <div data-aos="fade-up">
               <Image
                 className="max-w-full mx-auto md:max-w-none h-auto"
-                src={DevOps}
+                src={OpsFlow}
                 width={540}
                 height={405}
                 alt="Features 01"
               />
-            </div> */}
+            </div>
 
             {/* <ModalVideo
             thumb={VideoThumb}
