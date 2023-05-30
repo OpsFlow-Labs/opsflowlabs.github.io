@@ -50,7 +50,7 @@ export default function Features() {
                   strokeWidth="2"
                 />
               </svg>
-              <h4 className="h4 mb-2">DevOps Services</h4>
+              <h4 className="h4 mb-2">DevOps Consulting Services</h4>
               <p className="text-lg text-gray-400 text-center">Accelerate your digital transformation with our DevOps Consulting Services. Our team of experts will work with you to review your current DevOps practices, assess your organization's maturity level, and provide an action plan to ensure success.</p>
             </div>
 
