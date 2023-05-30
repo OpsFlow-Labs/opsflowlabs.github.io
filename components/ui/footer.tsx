@@ -132,7 +132,7 @@ export default function Footer() {
                       // href="/"
                       className="text-gray-400 transition duration-150 ease-in-out"
                     >
-                      alex@opsflowlabs.com
+                      contact@opsflowlabs.com
                     </span>
                   </li>
                   <li className="mb-1">

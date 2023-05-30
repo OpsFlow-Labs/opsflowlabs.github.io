@@ -1,6 +1,6 @@
 export const metadata = {
-  title: "Home - Open PRO",
-  description: "Page description",
+  title: "OpsFlow Labs",
+  description: "DevOps Consulting Services",
 };
 
 import Hero from "@/components/hero";
