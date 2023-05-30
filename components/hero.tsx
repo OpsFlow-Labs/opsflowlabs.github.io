@@ -58,14 +58,16 @@ export default function Hero() {
             <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
               <div className={classes.aboutParagraph}>
                 <h1 className="h1 mb-4" data-aos="fade-up">
-                DevOps Consulting Services
+                  DevOps Consulting Services
                 </h1>
                 <p
                   className="text-xl text-gray-400 mb-8"
                   data-aos="fade-up"
                   data-aos-delay="200"
                 >
-                  Increase the velocity of your innovation and drive speed to market for greater advantage with our DevOps Consulting Services.
+                  Increase the velocity of your innovation and drive speed to
+                  market for greater advantage with our DevOps Consulting
+                  Services.
                 </p>
                 {/* <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center">
               <div data-aos="fade-up" data-aos-delay="400">
@@ -87,9 +89,9 @@ export default function Hero() {
             </div> */}
               </div>
             </div>
-            <div data-aos="fade-up">
+            <div data-aos="fade-up" className={classes.responsiveImage}>
               <Image
-                className="max-w-full mx-auto md:max-w-none h-auto"
+                className="max-w-full mx-auto sm:max-w-none h-auto"
                 src={OpsFlow}
                 width={540}
                 height={405}

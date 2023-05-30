@@ -5,11 +5,10 @@ export default function Features() {
         <div className="py-12 md:py-20">
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-            <h2 className="h2 mb-4">
-              Services
-            </h2>
+            <h2 className="h2 mb-4">Services</h2>
             <p className="text-xl text-gray-400">
-              We offer a variety of services to make sure your project is a success.
+              We offer a variety of services to make sure your project is a
+              success.
             </p>
           </div>
 
@@ -24,7 +23,7 @@ export default function Features() {
               data-aos="fade-up"
               data-aos-anchor="[data-aos-id-blocks]"
             >
-              <svg
+              {/* <svg
                 className="w-16 h-16 mb-4"
                 viewBox="0 0 64 64"
                 xmlns="http://www.w3.org/2000/svg"
@@ -49,9 +48,38 @@ export default function Features() {
                   strokeLinecap="square"
                   strokeWidth="2"
                 />
+              </svg> */}
+
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="w-16 h-16 mb-4"
+                viewBox="0 0 64 64"
+              >
+                <rect
+                  className="fill-current text-purple-600"
+                  width="64"
+                  height="64"
+                  rx="32"
+                />
+                <path
+                  transform="translate(20, 18)"
+                  strokeLinecap="square"
+                  strokeWidth="1"
+                  fill="none"
+                  fillRule="evenodd"
+                  className="stroke-current text-purple-100"
+                  d="M5.5 20A5.5 5.5 0 0 1 0 14.5 5.5 5.5 0 0 1 5.5 9 6.52 6.52 0 0 1 18 11.03l.5-.03c2.5 0 4.5 2 4.5 4.5S21 20 18.5 20h-13m0-10C3 10 1 12 1 14.5S3 19 5.5 19h13a3.5 3.5 0 0 0 3.5-3.5 3.5 3.5 0 0 0-3.5-3.5c-.56 0-1.1.13-1.57.37.07-.28.07-.57.07-.87A5.5 5.5 0 0 0 11.5 6a5.51 5.51 0 0 0-5.31 4.05L5.5 10Z"
+                />
               </svg>
-              <h4 className="h4 mb-2">DevOps Consulting Services</h4>
-              <p className="text-lg text-gray-400 text-center">Accelerate your digital transformation with our DevOps Consulting Services. Our team of experts will work with you to review your current DevOps practices, assess your organization's maturity level, and provide an action plan to ensure success.</p>
+              <h4 className="h4 mb-2 text-center">
+                DevOps Consulting Services
+              </h4>
+              <p className="text-lg text-gray-400 text-center">
+                Accelerate your digital transformation with our DevOps
+                Consulting Services. Our team of experts will work with you to
+                review your current DevOps practices, assess your organization's
+                maturity level, and provide an action plan to ensure success.
+              </p>
             </div>
 
             {/* 2nd item */}
@@ -61,7 +89,7 @@ export default function Features() {
               data-aos-delay="100"
               data-aos-anchor="[data-aos-id-blocks]"
             >
-              <svg
+              {/* <svg
                 className="w-16 h-16 mb-4"
                 viewBox="0 0 64 64"
                 xmlns="http://www.w3.org/2000/svg"
@@ -86,10 +114,34 @@ export default function Features() {
                   strokeWidth="2"
                   strokeLinecap="square"
                 />
+              </svg> */}
+
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="w-16 h-16 mb-4"
+                viewBox="0 0 64 64"
+              >
+                <circle
+                  className="fill-current text-purple-600"
+                  cx="32"
+                  cy="32"
+                  r="32"
+                />
+                <path
+                  transform="translate(20, 18)"
+                  className="stroke-current text-purple-100"
+                  strokeWidth="0.5"
+                  fill="white"
+                  fillRule="evenodd"
+                  strokeLinecap="square"
+                  d="M3.5 8a5.5 5.5 0 1 1 8.6 4.55 9 9 0 0 1 5.9 8.18.75.75 0 0 1-1.5.04 7.5 7.5 0 0 0-15 0 .75.75 0 0 1-1.5-.04 9 9 0 0 1 5.9-8.18A5.5 5.5 0 0 1 3.5 8ZM9 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8Zm8.29 4c-.15 0-.3.01-.43.03a.75.75 0 1 1-.22-1.48 4.53 4.53 0 0 1 3.38 8.1 6.69 6.69 0 0 1 3.96 6.1.75.75 0 0 1-1.5 0 5.2 5.2 0 0 0-3.7-4.97l-.53-.16v-1.68l.41-.2A3.03 3.03 0 0 0 17.29 8Z"
+                />
               </svg>
-              <h4 className="h4 mb-2">Staffing Services</h4>
+              <h4 className="h4 mb-2 text-center">Staffing Services</h4>
               <p className="text-lg text-gray-400 text-center">
-              We provide resources ranging from contract staffing to full-time projects, as well as temporary to permanent positions to ensure your project is a success.
+                We provide resources ranging from contract staffing to full-time
+                projects, as well as temporary to permanent positions to ensure
+                your project is a success.
               </p>
             </div>
 
@@ -100,7 +152,7 @@ export default function Features() {
               data-aos-delay="200"
               data-aos-anchor="[data-aos-id-blocks]"
             >
-              <svg
+              {/* <svg
                 className="w-16 h-16 mb-4"
                 viewBox="0 0 64 64"
                 xmlns="http://www.w3.org/2000/svg"
@@ -136,148 +188,36 @@ export default function Features() {
                     r="11"
                   />
                 </g>
+              </svg> */}
+
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="w-16 h-16 mb-4"
+                viewBox="0 0 64 64"
+              >
+                <rect
+                  className="fill-current text-purple-600"
+                  width="64"
+                  height="64"
+                  rx="32"
+                />
+                <path
+                  className="stroke-current text-purple-100"
+                  strokeWidth="1"
+                  fill="white"
+                  fillRule="evenodd"
+                  strokeLinecap="square"
+                  transform="translate(20, 20)"
+                  d="M5 4h13a3 3 0 0 1 3 3v7a3 3 0 0 1-3 3h-4.5l.5 3h1v1H8v-1h1l.5-3H5a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3m5.5 13-.5 3h3l-.5-3h-2M5 5a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h13a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2H5Z"
+                />
               </svg>
-              <h4 className="h4 mb-2">Custom Development</h4>
+              <h4 className="h4 mb-2 text-center">Custom Development</h4>
               <p className="text-lg text-gray-400 text-center">
-              Our team of dedicated, full-stack engineers have years of experience delivering fully-functional, scalable projects on-time and on-budget.
+                Our team of dedicated, full-stack engineers have years of
+                experience delivering fully-functional, scalable projects
+                on-time and on-budget.
               </p>
             </div>
-
-            {/* 4th item
-            <div
-              className="relative flex flex-col items-center"
-              data-aos="fade-up"
-              data-aos-delay="300"
-              data-aos-anchor="[data-aos-id-blocks]"
-            >
-              <svg
-                className="w-16 h-16 mb-4"
-                viewBox="0 0 64 64"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect
-                  className="fill-current text-purple-600"
-                  width="64"
-                  height="64"
-                  rx="32"
-                />
-                <g
-                  transform="translate(22 21)"
-                  strokeLinecap="square"
-                  strokeWidth="2"
-                  fill="none"
-                  fillRule="evenodd"
-                >
-                  <path
-                    className="stroke-current text-purple-100"
-                    d="M17 22v-6.3a8.97 8.97 0 003-6.569A9.1 9.1 0 0011.262 0 9 9 0 002 9v1l-2 5 2 1v4a2 2 0 002 2h4a5 5 0 005-5v-5"
-                  />
-                  <circle
-                    className="stroke-current text-purple-300"
-                    cx="13"
-                    cy="9"
-                    r="3"
-                  />
-                </g>
-              </svg>
-              <h4 className="h4 mb-2">Instant Features</h4>
-              <p className="text-lg text-gray-400 text-center">
-                Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                cupidatat.
-              </p>
-            </div> */}
-
-            {/* 5th item */}
-            {/* <div
-              className="relative flex flex-col items-center"
-              data-aos="fade-up"
-              data-aos-delay="400"
-              data-aos-anchor="[data-aos-id-blocks]"
-            >
-              <svg
-                className="w-16 h-16 mb-4"
-                viewBox="0 0 64 64"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect
-                  className="fill-current text-purple-600"
-                  width="64"
-                  height="64"
-                  rx="32"
-                />
-                <g
-                  strokeLinecap="square"
-                  strokeWidth="2"
-                  fill="none"
-                  fillRule="evenodd"
-                >
-                  <path
-                    className="stroke-current text-purple-100"
-                    d="M29 42h10.229a2 2 0 001.912-1.412l2.769-9A2 2 0 0042 29h-7v-4c0-2.373-1.251-3.494-2.764-3.86a1.006 1.006 0 00-1.236.979V26l-5 6"
-                  />
-                  <path
-                    className="stroke-current text-purple-300"
-                    d="M22 30h4v12h-4z"
-                  />
-                </g>
-              </svg>
-              <h4 className="h4 mb-2">Instant Features</h4>
-              <p className="text-lg text-gray-400 text-center">
-                Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                cupidatat.
-              </p>
-            </div> */}
-
-            {/* 6th item */}
-            {/* <div
-              className="relative flex flex-col items-center"
-              data-aos="fade-up"
-              data-aos-delay="500"
-              data-aos-anchor="[data-aos-id-blocks]"
-            >
-              <svg
-                className="w-16 h-16 mb-4"
-                viewBox="0 0 64 64"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect
-                  className="fill-current text-purple-600"
-                  width="64"
-                  height="64"
-                  rx="32"
-                />
-                <g
-                  transform="translate(21 22)"
-                  strokeLinecap="square"
-                  strokeWidth="2"
-                  fill="none"
-                  fillRule="evenodd"
-                >
-                  <path
-                    className="stroke-current text-purple-300"
-                    d="M17 2V0M19.121 2.879l1.415-1.415M20 5h2M19.121 7.121l1.415 1.415M17 8v2M14.879 7.121l-1.415 1.415M14 5h-2M14.879 2.879l-1.415-1.415"
-                  />
-                  <circle
-                    className="stroke-current text-purple-300"
-                    cx="17"
-                    cy="5"
-                    r="3"
-                  />
-                  <path
-                    className="stroke-current text-purple-100"
-                    d="M8.86 1.18C3.8 1.988 0 5.6 0 10c0 5 4.9 9 11 9a10.55 10.55 0 003.1-.4L20 21l-.6-5.2a9.125 9.125 0 001.991-2.948"
-                  />
-                </g>
-              </svg>
-              <h4 className="h4 mb-2">Instant Features</h4>
-              <p className="text-lg text-gray-400 text-center">
-                Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                cupidatat.
-              </p>
-            </div> */}
           </div>
         </div>
       </div>
