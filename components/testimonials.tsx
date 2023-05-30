@@ -1,8 +1,9 @@
 import Image from "next/image";
 
-import TestimonialImage01 from "@/public/images/testimonial-01.jpg";
-import TestimonialImage02 from "@/public/images/testimonial-02.jpg";
-import TestimonialImage03 from "@/public/images/testimonial-03.jpg";
+import MarcinZajkowski from "@/public/images/marcin.jpeg";
+import RobertMedeiros from "@/public/images/robert.jpeg";
+import TomVogel from "@/public/images/tom.jpeg";
+import classes from "./testemonials.module.scss";
 
 export default function Testimonials() {
   return (
@@ -13,7 +14,7 @@ export default function Testimonials() {
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
             <h2 className="h2 mb-4">Don't take our word for it</h2>
             <p className="text-xl text-gray-400">
-            Take a look at our clients' feedback.
+              Take a look at our clients' feedback.
             </p>
           </div>
 
@@ -28,7 +29,7 @@ export default function Testimonials() {
                 <div className="relative inline-flex flex-col mb-4">
                   <Image
                     className="rounded-full"
-                    src={TestimonialImage01}
+                    src={MarcinZajkowski}
                     width={48}
                     height={48}
                     alt="Testimonial 01"
@@ -43,21 +44,28 @@ export default function Testimonials() {
                 </div>
               </div>
               <blockquote className="text-lg text-gray-400 grow">
-                — Open PRO lets me quickly get the insights I care about so that
-                I can focus on my productive work. I've had Open PRO for about
-                24 hours now and I honestly don't know how I functioned without
-                it before.
+                — OpsFlow Labs provided us with a thorough Security Audit of our
+                Amazon Web Services systems. It was a pleasure interacting with
+                him as a daunting process was made simple; granting efficiency
+                and savings, allowing us to take the right steps to smoothen our
+                operations. Glad to work with OpsFlow Labs and look forward to
+                our next engagement.
               </blockquote>
               <div className="text-gray-700 font-medium mt-6 pt-5 border-t border-gray-700">
-                <cite className="text-gray-200 not-italic">Anastasia Dan</cite>{" "}
+                <cite className="text-purple-600 not-italic">
+                  Marcin Zajkowski
+                </cite>{" "}
                 -{" "}
-                <a
+                {/* <a
                   className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out"
                   href="#0"
                 >
                   UX Board
-                </a>
+                </a> */}
               </div>
+              <span className={classes.customer}>
+                Consultant, New Media Pilot Corporation
+              </span>
             </div>
 
             {/* 2nd testimonial */}
@@ -70,7 +78,7 @@ export default function Testimonials() {
                 <div className="relative inline-flex flex-col mb-4">
                   <Image
                     className="rounded-full"
-                    src={TestimonialImage02}
+                    src={RobertMedeiros}
                     width={48}
                     height={48}
                     alt="Testimonial 02"
@@ -85,21 +93,27 @@ export default function Testimonials() {
                 </div>
               </div>
               <blockquote className="text-lg text-gray-400 grow">
-                — Open PRO lets me quickly get the insights I care about so that
-                I can focus on my productive work. I've had Open PRO for about
-                24 hours now and I honestly don't know how I functioned without
-                it before.
+                — I have much respect for OpsFlow Lab's insight and hard work at
+                TELUS, where their focus on building tools and culture to
+                support CD/CD and DevOps practices made my work easier, more
+                pleasant, and had a direct impact on the quality and speed with
+                which we were able to ship code.
               </blockquote>
               <div className="text-gray-700 font-medium mt-6 pt-5 border-t border-gray-700">
-                <cite className="text-gray-200 not-italic">Anastasia Dan</cite>{" "}
+                <cite className="text-purple-600 not-italic">
+                  Robert Medeiros
+                </cite>{" "}
                 -{" "}
-                <a
+                {/* <a
                   className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out"
                   href="#0"
                 >
                   UX Board
-                </a>
+                </a> */}
               </div>
+              <span className={classes.customer}>
+                Software Architect, TELUS
+              </span>
             </div>
 
             {/* 3rd testimonial */}
@@ -112,7 +126,7 @@ export default function Testimonials() {
                 <div className="relative inline-flex flex-col mb-4">
                   <Image
                     className="rounded-full"
-                    src={TestimonialImage03}
+                    src={TomVogel}
                     width={48}
                     height={48}
                     alt="Testimonial 03"
@@ -127,21 +141,26 @@ export default function Testimonials() {
                 </div>
               </div>
               <blockquote className="text-lg text-gray-400 grow">
-                — Open PRO lets me quickly get the insights I care about so that
-                I can focus on my productive work. I've had Open PRO for about
-                24 hours now and I honestly don't know how I functioned without
-                it before.
+                — OpsFlowLabs brought forth significant improvements to our
+                Reference Architecture, developed application Starter Kits, set
+                up bleeding-edge Infrastructure as Code with Terraform,
+                revolutionized Secrets management with Vault, expedited
+                application delivery with OpenShift, created innumerable build
+                pipelines in Jenkins and Circle CI, flaunted impressive
+                dashboards made with BigQuery and DataStudio, and much more.
               </blockquote>
               <div className="text-gray-700 font-medium mt-6 pt-5 border-t border-gray-700">
-                <cite className="text-gray-200 not-italic">Anastasia Dan</cite>{" "}
-                -{" "}
-                <a
+                <cite className="text-purple-600 not-italic">Tom Vogel</cite> -{" "}
+                {/* <a
                   className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out"
                   href="#0"
                 >
                   UX Board
-                </a>
+                </a> */}
               </div>
+              <span className={classes.customer}>
+                Director of Engineering, AppDirect
+              </span>
             </div>
           </div>
         </div>
