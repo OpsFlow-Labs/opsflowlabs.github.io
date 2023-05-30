@@ -20,8 +20,8 @@ export default function Blocks() {
                 <path className="stroke-current text-purple-100" d="M30 39.313l-4.18 2.197L27 34.628l-5-4.874 6.91-1.004L32 22.49l3.09 6.26L42 29.754l-3 2.924" strokeLinecap="square" strokeWidth="2" fill="none" fillRule="evenodd" />
                 <path className="stroke-current text-purple-300" d="M43 42h-9M43 37h-9" strokeLinecap="square" strokeWidth="2" />
               </svg>
-              <h4 className="h4 mb-2">Instant Features</h4>
-              <p className="text-lg text-gray-400 text-center">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.</p>
+              <h4 className="h4 mb-2">DevOps Consulting Services</h4>
+              <p className="text-lg text-gray-400 text-center">Accelerate your digital transformation with our DevOps Consulting Services. Our team of experts will work with you to review your current DevOps practices, assess your organization's maturity level, and provide an action plan to ensure success.</p>
             </div>
 
             {/* 2nd item */}
@@ -31,8 +31,8 @@ export default function Blocks() {
                 <path className="stroke-current text-purple-100" strokeWidth="2" strokeLinecap="square" d="M21 23h22v18H21z" fill="none" fillRule="evenodd" />
                 <path className="stroke-current text-purple-300" d="M26 28h12M26 32h12M26 36h5" strokeWidth="2" strokeLinecap="square" />
               </svg>
-              <h4 className="h4 mb-2">Instant Features</h4>
-              <p className="text-lg text-gray-400 text-center">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.</p>
+              <h4 className="h4 mb-2">Staffing Services</h4>
+              <p className="text-lg text-gray-400 text-center">We provide resources ranging from contract staffing to full-time projects, as well as temporary to permanent positions to ensure your project is a success.</p>
             </div>
 
             {/* 3rd item */}
@@ -45,8 +45,8 @@ export default function Blocks() {
                   <circle className="stroke-current text-purple-100" cx="11" cy="11" r="11" />
                 </g>
               </svg>
-              <h4 className="h4 mb-2">Instant Features</h4>
-              <p className="text-lg text-gray-400 text-center">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.</p>
+              <h4 className="h4 mb-2">Custom Development</h4>
+              <p className="text-lg text-gray-400 text-center">Our team of dedicated, full-stack engineers have years of experience delivering fully-functional, scalable projects on-time and on-budget.</p>
             </div>
 
             {/* 4th item */}
