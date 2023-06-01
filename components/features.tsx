@@ -1,3 +1,5 @@
+import PageIllustration from "./page-illustration";
+
 export default function Features() {
   return (
     <section id="first-section">
