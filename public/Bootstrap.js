@@ -1,5 +1,4 @@
 "use client";
-import { Carousel } from "react-responsive-carousel";
 import { useEffect } from "react";
 import myItems from "./Items.json" assert { type: "json" };
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -37,54 +36,129 @@ export default function ResponsiveCarousel() {
   });
 
   return (
-    // <div className={styles.container}>
-    //   <Carousel
-    //     showThumbs={false}
-    //     showStatus={false}
-    //     showArrows={true}
-    //     showIndicators={true}
-    //     infiniteLoop={true}
-    //     dynamicHeight={false}
-    //     className={styles.mySwiper}
-    //     autoPlay={true}
-    //   >
-    //     {responsive.map((item) => (
-    //       <div key={item.id} className={styles.swipItem}>
-    //         <div className={styles.imgBox}>
-    //           <img src={item.imageUrl} alt="slides" />
-    //         </div>
-    //       </div>
-    //     ))}
-    //   </Carousel>
-    // </div>
+    <div className={styles.carouselContainer}>
+      <div className="container">
+        <section className="customer-logos slider">
+          <div className="slide">
+            <div className={styles.oneImageInSlider}>
+              <img
+                src="./images/Telus.svg"
+                style={{ width: "60%", height: "auto" }}
+              />
+            </div>
+          </div>
 
-    <div className="container">
-      <section className="customer-logos slider">
-        <div className="slide">
-          <img src="https://raw.githubusercontent.com/solodev/infinite-logo-carousel/master/images/image1.png" />
-        </div>
-        <div className="slide">
-          <img src="https://raw.githubusercontent.com/solodev/infinite-logo-carousel/master/images/image2.png" />
-        </div>
-        <div className="slide">
-          <img src="https://raw.githubusercontent.com/solodev/infinite-logo-carousel/master/images/image3.png" />
-        </div>
-        <div className="slide">
-          <img src="https://raw.githubusercontent.com/solodev/infinite-logo-carousel/master/images/image4.png" />
-        </div>
-        <div className="slide">
-          <img src="https://raw.githubusercontent.com/solodev/infinite-logo-carousel/master/images/image5.png" />
-        </div>
-        <div className="slide">
-          <img src="https://raw.githubusercontent.com/solodev/infinite-logo-carousel/master/images/image6.png" />
-        </div>
-        <div className="slide">
-          <img src="https://raw.githubusercontent.com/solodev/infinite-logo-carousel/master/images/image7.png" />
-        </div>
-        <div className="slide">
-          <img src="https://raw.githubusercontent.com/solodev/infinite-logo-carousel/master/images/image8.png" />
-        </div>
-      </section>
+          <div className="slide">
+            <div className={styles.oneImageInSlider}>
+              <img
+                src="./images/zone-tv.svg"
+                style={{ width: "60%", height: "auto" }}
+              />
+            </div>
+          </div>
+
+          {/* <div className="slide">
+            <div className={styles.oneImageSirius}>
+              <img
+                src="./images/Sirius-XM.svg"
+                style={{ width: "60%", height: "auto" }}
+              />
+            </div>
+          </div> */}
+          <div className="slide">
+            <div className={styles.oneImageInSlider}>
+              <img
+                src="./images/Teesnap.svg"
+                style={{ width: "60%", height: "auto" }}
+              />
+            </div>
+          </div>
+          {/* <div className="slide">
+            <div className={styles.oneImageEnd}>
+              <img
+                src="./images/Kodo.svg"
+                style={{ width: "60%", height: "auto" }}
+              />
+            </div>
+          </div> */}
+
+          <div className="slide">
+            <div className={styles.oneImageInSlider}>
+              <img
+                src="./images/Hash-Corp.svg"
+                style={{ width: "60%", height: "auto" }}
+              />
+            </div>
+          </div>
+          <div className="slide">
+            <div className={styles.oneImageInSlider}>
+              <img
+                src="./images/DivvyBet.svg"
+                style={{ width: "60%", height: "auto" }}
+              />
+            </div>
+          </div>
+          <div className="slide">
+            <div className={styles.oneImageInSlider}>
+              <img
+                src="./images/Telus.svg"
+                style={{ width: "60%", height: "auto" }}
+              />
+            </div>
+          </div>
+
+          <div className="slide">
+            <div className={styles.oneImageInSlider}>
+              <img
+                src="./images/zone-tv.svg"
+                style={{ width: "60%", height: "auto" }}
+              />
+            </div>
+          </div>
+
+          {/* <div className="slide">
+            <div className={styles.oneImageSirius}>
+              <img
+                src="./images/Sirius-XM.svg"
+                style={{ width: "60%", height: "auto" }}
+              />
+            </div>
+          </div> */}
+          <div className="slide">
+            <div className={styles.oneImageInSlider}>
+              <img
+                src="./images/Teesnap.svg"
+                style={{ width: "60%", height: "auto" }}
+              />
+            </div>
+          </div>
+          {/* <div className="slide">
+            <div className={styles.oneImageEnd}>
+              <img
+                src="./images/Kodo.svg"
+                style={{ width: "60%", height: "auto" }}
+              />
+            </div>
+          </div> */}
+
+          <div className="slide">
+            <div className={styles.oneImageInSlider}>
+              <img
+                src="./images/Hash-Corp.svg"
+                style={{ width: "60%", height: "auto" }}
+              />
+            </div>
+          </div>
+          <div className="slide">
+            <div className={styles.oneImageInSlider}>
+              <img
+                src="./images/DivvyBet.svg"
+                style={{ width: "60%", height: "auto" }}
+              />
+            </div>
+          </div>
+        </section>
+      </div>
     </div>
   );
 }
