@@ -13,6 +13,13 @@ import classes from "./hero.module.scss";
 export default function Hero() {
   return (
     <section>
+      <script
+        src="https://code.jquery.com/jquery-2.2.0.min.js"
+        type="text/javascript"
+      ></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
       <div className="max-w-6xl mx-auto px-4 sm:px-6 relative">
         {/* Illustration behind hero content */}
         <div
@@ -69,24 +76,6 @@ export default function Hero() {
                   market for greater advantage with our DevOps Consulting
                   Services.
                 </p>
-                {/* <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center">
-              <div data-aos="fade-up" data-aos-delay="400">
-                <a
-                  className="btn text-white bg-purple-600 hover:bg-purple-700 w-full mb-4 sm:w-auto sm:mb-0"
-                  href="#0"
-                >
-                  Start free trial
-                </a>
-              </div>
-              <div data-aos="fade-up" data-aos-delay="600">
-                <a
-                  className="btn text-white bg-gray-700 hover:bg-gray-800 w-full sm:w-auto sm:ml-4"
-                  href="#0"
-                >
-                  Learn more
-                </a>
-              </div>
-            </div> */}
               </div>
             </div>
             <div data-aos="fade-up" className={classes.responsiveImage}>
@@ -98,18 +87,11 @@ export default function Hero() {
                 alt="Features 01"
               />
             </div>
-
-            {/* <ModalVideo
-            thumb={VideoThumb}
-            thumbWidth={1024}
-            thumbHeight={576}
-            thumbAlt="Modal video thumbnail"
-            video="/videos/video.mp4"
-            videoWidth={1920}
-            videoHeight={1080}
-          /> */}
           </div>
-          {/* <BootstrapCarousel /> */}
+          <div className={classes.carousel} data-aos="fade-up">
+            <div className={classes.spotlight}>Customer Spotlight</div>
+            <BootstrapCarousel />
+          </div>
         </div>
       </div>
     </section>
