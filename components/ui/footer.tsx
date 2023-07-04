@@ -13,8 +13,8 @@ export default function Footer() {
             <div className="md:col-span-4 lg:col-span-5">
               <div className="mb-2">
                 {/* Logo */}
-                <Link
-                  href="https://opsflowlabs.com"
+                <a
+                  href="#"
                   className={classes.opsFlowLink}
                   aria-label="Cruip"
                 >
@@ -38,7 +38,7 @@ export default function Footer() {
                     <span className={classes.logoText}>OpsFlow</span>
                     <span className={classes.labs}>Labs</span>
                   </div>
-                </Link>
+                </a>
               </div>
               <div className="text-gray-400">DevOps Consulting Services.</div>
             </div>
