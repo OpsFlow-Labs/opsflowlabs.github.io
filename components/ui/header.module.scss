@@ -5,6 +5,17 @@
   align-items: center;
 }
 
+.opsFlowLink {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
 .logoText {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
@@ -33,6 +44,7 @@
   &:hover {
     background-color: #8066eb;
     color: #ffffff;
+    text-decoration: none;
   }
 }
 
@@ -43,6 +55,7 @@
   &:hover {
     border-bottom: 4px solid #8066eb;
     color: #ffffff;
+    text-decoration: none;
   }
 }
 

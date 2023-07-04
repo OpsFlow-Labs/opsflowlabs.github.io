@@ -28,7 +28,11 @@ export default function Header() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between h-20">
           <div className="shrink-0 mr-4">
-            <Link href="https://opsflowlabs.com" className="block" aria-label="Cruip">
+            <Link
+              href="https://opsflowlabs.com"
+              className={classes.opsFlowLink}
+              aria-label="Cruip"
+            >
               <div className={classes.testClass}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
