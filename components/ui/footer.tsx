@@ -194,7 +194,7 @@ export default function Footer() {
               {
                 <li className="ml-4">
                   <Link
-                    href="/"
+                    href="https://github.com/OpsFlow-Labs"
                     className="flex justify-center items-center text-purple-600 bg-gray-800 hover:text-gray-100 hover:bg-purple-600 rounded-full transition duration-150 ease-in-out"
                     aria-label="Github"
                   >
