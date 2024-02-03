@@ -1,8 +1,6 @@
 "use client";
 import Image from "next/image";
 
-import VideoThumb from "@/public/images/hero-image-01.jpg";
-import ModalVideo from "@/components/modal-video";
 import BootstrapCarousel from "../public/Bootstrap";
 
 import OpsFlow from "@/public/images/opsFlow.png";

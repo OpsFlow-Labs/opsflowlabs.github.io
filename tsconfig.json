@@ -20,7 +20,8 @@
       }
     ],
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./*"],
+      "contentlayer/generated": ["./.contentlayer/generated"]
     }
   },
   "include": [
@@ -29,6 +30,7 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "typings",
+    ".contentlayer/generated",
     "src"
   ],
   "exclude": ["node_modules"]

@@ -1,17 +1,6 @@
-// /** @type {import('next').NextConfig} */
-// const nextConfig = {
-//   experimental: {
-//     appDir: true,
-//   },
-// };
+const { withContentlayer } = require("next-contentlayer");
 
-// const path = require("path");
+/** @type {import('next').NextConfig} */
+const nextConfig = {};
 
-// module.exports = {
-//   sassOptions: {
-//     includePaths: [path.join(__dirname, "styles")],
-//   },
-//   nextConfig,
-// };
-
-// // module.exports = nextConfig;
+module.exports = withContentlayer(nextConfig);
