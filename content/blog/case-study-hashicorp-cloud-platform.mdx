@@ -10,7 +10,7 @@ tags:
   - Engineering
 ---
 
-# Background
+## Background
 
 HashiCorp Cloud Platform lets organizations run HashiCorp products as managed services across providers like AWS and Azure with a consistent workflow. Teams can focus on building cloud-native applications while relying on HashiCorp SREs to manage their infrastructure through a centralized platform.
 
@@ -18,31 +18,40 @@ Initially launched as a closed platform, it quickly gained popularity, leading t
 
 ## Challenges
 
-*   Scalability: The existing infrastructure was not designed to handle the growing user base and traffic spikes during peak hours.
-*   Reliability: Frequent downtimes and performance issues were impacting user experience and credibility.
-*   Monitoring and Alerting: Limited visibility into system health and inadequate alerting mechanisms made it challenging to proactively identify and address issues.
+1. Scalability: The existing infrastructure was not designed to handle the growing user base and traffic spikes during peak hours.
+
+2. Reliability: Frequent downtimes and performance issues were impacting user experience and credibility.
+
+3. Monitoring and Alerting: Limited visibility into system health and inadequate alerting mechanisms made it challenging to proactively identify and address issues.
 
 ## Solution
 
 The HashiCorp cloud platform team implemented a comprehensive SRE strategy to address the challenges and enhance the scalability and reliability of its web service.
 
-### Key Initiatives
+#### Key Initiatives
 
 1. Infrastructure as Code (IaC): Adopted Infrastructure as Code principles to automate infrastructure provisioning and configuration. Since HashiCorp is the creator of DevOps tooling, we decided to use all of their own tooling in this process.
+
 2. Microservices Architecture: Decomposed the monolithic application into microservices to improve modularity and scalability. Each microservice was independently deployable and scalable, allowing for targeted optimization.
+
 3. Service Level Objectives (SLOs) and Service Level Indicators (SLIs): Defined clear SLOs and SLIs to measure system reliability and performance. Metrics such as latency, error rates, and uptime were monitored continuously to ensure adherence to SLOs.
-* Auto Scaling and Load Balancing: Implemented auto-scaling groups and load balancers to dynamically adjust resources based on traffic patterns. This ensured optimal resource utilization during peak hours while minimizing costs during off-peak periods.
-* Chaos Engineering: Conducted chaos experiments regularly to proactively identify weaknesses in the system and improve fault tolerance. Simulated scenarios like network failures or service outages to validate system resilience.
-* Observability: Implemented a centralized logging and monitoring system using tools like Prometheus and Grafana. This provided real-time visibility into system health and performance, enabling quick detection and resolution of issues.
-* Incident Response and Post-Incident Analysis: Established clear incident response procedures and conducted post-incident analysis to identify root causes and prevent recurrence. Emphasized a blameless culture to encourage collaboration and learning from failures.
+
+4. Auto Scaling and Load Balancing: Implemented auto-scaling groups and load balancers to dynamically adjust resources based on traffic patterns. This ensured optimal resource utilization during peak hours while minimizing costs during off-peak periods.
+
+5. Chaos Engineering: Conducted chaos experiments regularly to proactively identify weaknesses in the system and improve fault tolerance. Simulated scenarios like network failures or service outages to validate system resilience.
+
+6. Observability: Implemented a centralized logging and monitoring system using Datadog. This provided real-time visibility into system health and performance, enabling quick detection and resolution of issues.
+
+7. Incident Response and Post-Incident Analysis: Established clear incident response procedures and conducted post-incident analysis to identify root causes and prevent recurrence. Emphasized a blameless culture to encourage collaboration and learning from failures.
 
 ### Results
 
-* Improved Scalability: The adoption of microservices architecture and auto-scaling mechanisms enabled TechSavvy to handle a 300% increase in user traffic without experiencing downtime or performance degradation.
-* Enhanced Reliability: The implementation of SLOs, SLIs, and proactive monitoring reduced the mean time to detect (MTTD) and mean time to resolve (MTTR) incidents by 90%, leading to improved system reliability and user experience.
-* Cultural Shift: The implementation of SRE principles fostered a culture of collaboration, accountability, and continuous improvement within the engineering teams.
+1. Improved Scalability: The adoption of microservices architecture and auto-scaling mechanisms enabled HashiCorp to handle a 1000% increase in user traffic without experiencing downtime or performance degradation.
+
+2. Enhanced Reliability: The implementation of SLOs, SLIs, and proactive monitoring reduced the mean time to detect (MTTD) and mean time to resolve (MTTR) incidents by 90%, leading to improved system reliability and user experience.
+
+3. Cultural Shift: The implementation of SRE principles fostered a culture of collaboration, accountability, and continuous improvement within the engineering teams.
 
 ## Conclusion
 
 By embracing SRE principles and practices, the HashiCorp team was able to overcome scalability and reliability challenges, ensuring high availability and performance for its HCP product.
-
