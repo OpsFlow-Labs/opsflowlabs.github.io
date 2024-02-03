@@ -1,10 +1,12 @@
 "use client";
 import Link from "next/link";
-import MobileMenu from "./mobile-menu";
 import classes from "./header.module.scss";
 import { useEffect } from "react";
+import { useRouter, usePathname, useSearchParams } from "next/navigation";
 
 export default function Header() {
+  const path = usePathname();
+
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
     "use client";
     // first prevent the default behavior
@@ -61,16 +63,23 @@ export default function Header() {
             {/* Desktop sign in links */}
             <ul className="flex grow justify-end flex-wrap items-center">
               <li>
-                <Link
-                  href="#first-section"
-                  // scroll={false}
-                  // className="font-medium text-purple-600 hover:text-gray-200 px-4 py-3 flex items-center transition duration-150 ease-in-out"
-                  className={classes.aboutUs}
-                  onClick={handleScroll}
-                >
-                  About Us
+                <Link href="/blog" className={classes.aboutUs}>
+                  Blog
                 </Link>
               </li>
+              {!path.includes("blog") && (
+                <li>
+                  <Link
+                    href="#first-section"
+                    // scroll={false}
+                    // className="font-medium text-purple-600 hover:text-gray-200 px-4 py-3 flex items-center transition duration-150 ease-in-out"
+                    className={classes.aboutUs}
+                    onClick={handleScroll}
+                  >
+                    About Us
+                  </Link>
+                </li>
+              )}
               <li>
                 <Link
                   href="#sectionTwo"
