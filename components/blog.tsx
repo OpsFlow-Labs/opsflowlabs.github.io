@@ -16,7 +16,7 @@ export default function News() {
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
             <h2 className="h2" data-aos="fade-up">
-              Case studies
+              Case Studies
             </h2>
           </div>
 

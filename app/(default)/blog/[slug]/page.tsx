@@ -128,8 +128,8 @@ export default async function SinglePost({
                 <div className="md:flex md:items-center md:justify-between text-center md:text-left">
                   <div className="text-lg text-gray-400 italic">
                     Originally published at{" "}
-                    <Link href="https://cruip.com/" className="text-gray-200">
-                      https://cruip.com/
+                    <Link href="https://opsflowlabs.com/" className="text-gray-200">
+                      https://opsflowlabs.com/
                     </Link>
                     .
                   </div>

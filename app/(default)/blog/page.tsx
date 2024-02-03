@@ -5,7 +5,7 @@ import PostTags from "@/components/post-tags";
 import PostItem from "@/components/post-item";
 
 export const metadata = {
-  title: "Blog - Open PRO",
+  title: "Blog - OpsFlow Labs",
   description: "Page description",
 };
 
@@ -26,7 +26,7 @@ export default function Blog() {
             {/*  Page header */}
             <div className="max-w-3xl pb-12 md:pb-20 text-center md:text-left">
               <h1 className="h1" data-aos="fade-up">
-                Case studies
+                {/* Blog Text */}
               </h1>
             </div>
 
