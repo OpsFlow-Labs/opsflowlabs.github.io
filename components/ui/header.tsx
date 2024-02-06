@@ -31,7 +31,7 @@ export default function Header() {
         <div className="flex items-center justify-between h-20">
           <div className="shrink-0 mr-4">
             <a
-              href="#"
+              href="https://opsflowlabs.com/"
               className={classes.opsFlowLink}
               aria-label="Cruip"
             >
@@ -62,6 +62,16 @@ export default function Header() {
           <nav className="hidden md:flex md:grow">
             {/* Desktop sign in links */}
             <ul className="flex grow justify-end flex-wrap items-center">
+              <li>
+                <Link
+                  href="https://opsflowlabs.com/"
+                  // scroll={false}
+                  // className="font-medium text-purple-600 hover:text-gray-200 px-4 py-3 flex items-center transition duration-150 ease-in-out"
+                  className={classes.aboutUs}
+                >
+                  Home
+                </Link>
+              </li>
               <li>
                 <Link href="/blog" className={classes.aboutUs}>
                   Blog

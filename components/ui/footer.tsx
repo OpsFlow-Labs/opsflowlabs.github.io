@@ -14,7 +14,7 @@ export default function Footer() {
               <div className="mb-2">
                 {/* Logo */}
                 <a
-                  href="#"
+                  href="https://opsflowlabs.com/"
                   className={classes.opsFlowLink}
                   aria-label="Cruip"
                 >
