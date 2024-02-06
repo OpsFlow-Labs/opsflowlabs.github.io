@@ -63,14 +63,14 @@ export default function Header() {
             {/* Desktop sign in links */}
             <ul className="flex grow justify-end flex-wrap items-center">
               <li>
-                <Link
+                <a
                   href="https://opsflowlabs.com/"
                   // scroll={false}
                   // className="font-medium text-purple-600 hover:text-gray-200 px-4 py-3 flex items-center transition duration-150 ease-in-out"
                   className={classes.aboutUs}
                 >
                   Home
-                </Link>
+                </a>
               </li>
               <li>
                 <Link href="/blog" className={classes.aboutUs}>
