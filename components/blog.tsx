@@ -7,7 +7,7 @@ export default function News() {
     return new Date(a.publishedAt) > new Date(b.publishedAt) ? -1 : 1;
   });
 
-  const posts = allPosts.slice(0, 3);
+  const posts = allPosts.slice(0, 4);
 
   return (
     <section>
