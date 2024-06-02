@@ -9,8 +9,8 @@ export default function ResponsiveCarousel() {
 
   useEffect(() => {
     $(document).ready(function () {
-      $(".customer-logos") &&
-        $(".customer-logos")?.slick({
+      if ($(".customer-logos").length > 0) {
+        $(".customer-logos").slick({
           slidesToShow: 6,
           slidesToScroll: 1,
           autoplay: true,
@@ -33,8 +33,9 @@ export default function ResponsiveCarousel() {
             },
           ],
         });
+      }
     });
-  });
+  }, []); // Empty dependency array ensures useEffect runs only once after component mounts
 
   return (
     <div className={styles.carouselContainer}>

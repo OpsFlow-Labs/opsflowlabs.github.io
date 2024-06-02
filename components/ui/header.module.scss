@@ -203,3 +203,15 @@
     }
   }
 }
+
+.homeMobile {
+  color: rgba(255, 255, 255, 0.53);
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  &:hover {
+    color: #ffffff;
+    text-decoration: none;
+  }
+}

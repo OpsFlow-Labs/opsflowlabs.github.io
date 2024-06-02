@@ -3,6 +3,7 @@ import Link from "next/link";
 import classes from "./header.module.scss";
 import { useEffect } from "react";
 import { useRouter, usePathname, useSearchParams } from "next/navigation";
+import MobileMenu from "./mobile-menu";
 
 export default function Header() {
   const path = usePathname();
@@ -103,7 +104,7 @@ export default function Header() {
             </ul>
           </nav>
 
-          {/* <MobileMenu /> */}
+          <MobileMenu />
         </div>
       </div>
     </header>
