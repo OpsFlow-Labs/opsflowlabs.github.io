@@ -40,7 +40,7 @@ export default function Footer() {
                   </div>
                 </a>
               </div>
-              <div className="text-gray-400">DevOps Consulting Services.</div>
+              <div className="text-gray-400">Optimize Your Operations with Cutting Edge DevOps Solutions</div>
             </div>
 
             {/* 2nd, 3rd and 4th blocks */}

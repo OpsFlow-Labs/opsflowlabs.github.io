@@ -63,16 +63,19 @@ export default function Hero() {
             <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
               <div className={classes.aboutParagraph}>
                 <h1 className="h1 mb-4" data-aos="fade-up">
-                  DevOps Consulting Services
+                  Optimize Your Operations with Cutting Edge DevOps Solutions
                 </h1>
                 <p
                   className="text-xl text-gray-400 mb-8"
                   data-aos="fade-up"
                   data-aos-delay="200"
                 >
-                  Increase the velocity of your innovation and drive speed to
-                  market for greater advantage with our DevOps Consulting
-                  Services.
+                  Streamline your workflows and boost efficiency… without the hassle of complex implementations
+                </p>
+                <p className="text-l text-gray-400 mb-8"
+                  data-aos="fade-up"
+                  data-aos-delay="200">
+                  Unlock the potential of your business with our advanced AI-driven automation tools. OpsFlow Labs delivers tailored solutions designed to simplify complex processes, enhance productivity, and drive growth. Transform your operations today with innovative technology that adapts to your unique needs.
                 </p>
               </div>
             </div>
