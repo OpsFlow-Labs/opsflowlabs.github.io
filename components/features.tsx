@@ -75,11 +75,11 @@ export default function Features() {
               </svg>
               <h4 className="h4 mb-2 text-center">Transform Faster with DevOps Consulting</h4>
               <p className="text-lg text-gray-400 text-center">Ready to supercharge your digital journey?</p>
-              <p className="text-lg text-gray-400  text-center">Our DevOps Consulting Services are designed to help you accelerate your transformation. Partner with our experts to:</p>
-              <li className="text-lg text-gray-400">Review: Evaluate your current DevOps practices.</li>
-              <li className="text-lg text-gray-400">Assess: Gauge your organization's maturity level.</li>
-              <li className="text-lg text-gray-400">Plan: Get a customized action plan for guaranteed success.</li>
-              <p className="text-lg text-gray-400">Let’s streamline your operations and drive growth together!</p>              
+              <p className="text-lg text-gray-400 text-center">Our DevOps Consulting Services are designed to help you accelerate your transformation. Partner with our experts to:</p>
+              <li className="text-lg text-gray-400 text-center">Review: Evaluate your current DevOps practices.</li>
+              <li className="text-lg text-gray-400 text-center">Assess: Gauge your organization's maturity level.</li>
+              <li className="text-lg text-gray-400 text-center">Plan: Get a customized action plan for guaranteed success.</li>
+              <p className="text-lg text-gray-400 text-center">Let’s streamline your operations and drive growth together!</p>              
             </div>
 
             {/* 2nd item */}
