@@ -5,6 +5,7 @@ import BootstrapCarousel from "../public/Bootstrap";
 
 import OpsFlow from "@/public/images/opsFlow.png";
 import classes from "./hero.module.scss";
+import Link from "next/link";
 
 // import Slider from "react-slick";
 
@@ -70,15 +71,24 @@ export default function Hero() {
                   data-aos="fade-up"
                   data-aos-delay="200"
                 >
-                  Streamline your workflows and boost efficiency… without the hassle of complex implementations
+                  Streamline your workflows and boost efficiency… without the
+                  hassle of complex implementations
                 </p>
-                <p className="text-l text-gray-400 mb-8"
+                <p
+                  className="text-l text-gray-400 mb-8"
                   data-aos="fade-up"
-                  data-aos-delay="200">
-                  Unlock the potential of your business with our advanced AI-driven automation tools. OpsFlow Labs delivers tailored solutions designed to simplify complex processes, enhance productivity, and drive growth. Transform your operations today with innovative technology that adapts to your unique needs.
+                  data-aos-delay="200"
+                >
+                  Unlock the potential of your business with our advanced
+                  AI-driven automation tools. OpsFlow Labs delivers tailored
+                  solutions designed to simplify complex processes, enhance
+                  productivity, and drive growth. Transform your operations
+                  today with innovative technology that adapts to your unique
+                  needs.
                 </p>
               </div>
             </div>
+
             <div data-aos="fade-up" className={classes.responsiveImage}>
               <Image
                 className="max-w-full mx-auto sm:max-w-none h-auto"
@@ -89,6 +99,18 @@ export default function Hero() {
               />
             </div>
           </div>
+          <ul className="flex grow justify-start flex-wrap items-center">
+            <li>
+              <Link
+                href="#sectionTwo"
+                // className="btn-sm text-white bg-purple-600 hover:bg-purple-700 ml-3"
+                className={classes.btnSchedule}
+                // onClick={handleScroll}
+              >
+                SCHEDULE FREE CONSULTATION
+              </Link>
+            </li>
+          </ul>
           <div className={classes.carousel} data-aos="fade-up">
             <div className={classes.spotlight}>Customer Spotlight</div>
             <BootstrapCarousel />

@@ -29,3 +29,18 @@
 .carousel {
   margin-top: 110px;
 }
+
+.btnSchedule {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  color: black;
+  font-weight: 600;
+  &:hover {
+    background-color: #8066eb;
+    color: #ffffff;
+    text-decoration: none;
+  }
+}
