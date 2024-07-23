@@ -256,9 +256,10 @@ export default function Features() {
         </div>
         <div className="flex grow justify-center mb-20 flex-wrap items-center">
           <Link
-            href="#sectionTwo"
+            href="https://calendly.com/alex-opsflowlabs/consultation"
             className={classes.btnSchedule}
-            // onClick={handleScroll}
+            target="_blank"
+            rel="noopener noreferrer"
           >
             SCHEDULE FREE CONSULTATION
           </Link>
