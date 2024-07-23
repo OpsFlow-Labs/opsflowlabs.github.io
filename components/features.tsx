@@ -133,7 +133,6 @@ export default function Features() {
                   strokeLinecap="square"
                 />
               </svg> */}
-
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="w-16 h-16 mb-4"
@@ -160,10 +159,15 @@ export default function Features() {
               </h4>
               <p className="text-lg text-gray-400 text-center">
                 Unlock the talent you need with our comprehensive Staffing
-                Services. Whether you require contract staffing, full-time
-                hires, or temporary to permanent placements, we’ve got you
-                covered. Our expert resources ensure your project’s success from
-                start to finish.
+                Services.
+              </p>
+              <p className="text-lg text-gray-400 text-center">
+                Whether you require contract staffing, full-time hires, or
+                temporary to permanent placements, we’ve got you covered.
+              </p>
+              <p className="text-lg text-gray-400 text-center">
+                Our expert resources ensure your project’s success from start to
+                finish.
               </p>
             </div>
 
@@ -239,8 +243,11 @@ export default function Features() {
               <p className="text-lg text-gray-400 text-center">
                 Our dedicated full-stack engineers bring years of experience to
                 the table, delivering fully-functional, scalable projects that
-                are always on-time and on-budget. Trust us to turn your vision
-                into reality with precision and efficiency
+                are always on-time and on-budget.
+              </p>
+              <p className="text-lg text-gray-400 text-center">
+                Trust us to turn your vision into reality with precision and
+                efficiency
               </p>
             </div>
           </div>
