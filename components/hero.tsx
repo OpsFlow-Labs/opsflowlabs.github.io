@@ -99,18 +99,18 @@ export default function Hero() {
               />
             </div>
           </div>
-          <ul className="flex grow justify-start flex-wrap items-center">
-            <li>
-              <Link
-                href="#sectionTwo"
-                // className="btn-sm text-white bg-purple-600 hover:bg-purple-700 ml-3"
-                className={classes.btnSchedule}
-                // onClick={handleScroll}
-              >
-                SCHEDULE FREE CONSULTATION
-              </Link>
-            </li>
-          </ul>
+          <div
+            data-aos="fade-up"
+            className="flex grow justify-center md:justify-start mt-20 flex-wrap items-center"
+          >
+            <Link
+              href="#sectionTwo"
+              className={classes.btnSchedule}
+              // onClick={handleScroll}
+            >
+              SCHEDULE FREE CONSULTATION
+            </Link>
+          </div>
           <div className={classes.carousel} data-aos="fade-up">
             <div className={classes.spotlight}>Customer Spotlight</div>
             <BootstrapCarousel />

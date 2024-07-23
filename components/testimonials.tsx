@@ -4,6 +4,9 @@ import MarcinZajkowski from "@/public/images/marcin.jpeg";
 import RobertMedeiros from "@/public/images/robert.jpeg";
 import TomVogel from "@/public/images/tom.jpeg";
 import classes from "./testemonials.module.scss";
+import classesTwo from "./hero.module.scss";
+
+import Link from "next/link";
 
 export default function Testimonials() {
   return (
@@ -13,7 +16,10 @@ export default function Testimonials() {
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
             <h2 className="h2 mb-4">Hear It Straight from Our Clients</h2>
-            <p className="text-xl text-gray-400">Explore the feedback and success stories from those who know us best</p>
+            <p className="text-xl text-gray-400">
+              Explore the feedback and success stories from those who know us
+              best
+            </p>
           </div>
 
           {/* Testimonials */}
@@ -161,6 +167,15 @@ export default function Testimonials() {
               </span>
             </div>
           </div>
+        </div>
+        <div className="flex grow justify-center mb-20 flex-wrap items-center">
+          <Link
+            href="#sectionTwo"
+            className={classesTwo.btnSchedule}
+            // onClick={handleScroll}
+          >
+            SCHEDULE FREE CONSULTATION
+          </Link>
         </div>
       </div>
     </section>

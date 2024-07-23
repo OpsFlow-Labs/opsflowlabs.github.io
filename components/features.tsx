@@ -1,4 +1,6 @@
+import Link from "next/link";
 import PageIllustration from "./page-illustration";
+import classes from "./hero.module.scss";
 
 export default function Features() {
   return (
@@ -251,6 +253,15 @@ export default function Features() {
               </p>
             </div>
           </div>
+        </div>
+        <div className="flex grow justify-center mb-20 flex-wrap items-center">
+          <Link
+            href="#sectionTwo"
+            className={classes.btnSchedule}
+            // onClick={handleScroll}
+          >
+            SCHEDULE FREE CONSULTATION
+          </Link>
         </div>
       </div>
     </section>

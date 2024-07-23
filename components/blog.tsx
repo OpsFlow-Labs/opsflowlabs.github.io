@@ -1,5 +1,7 @@
+import Link from "next/link";
 import { allPosts } from "../.contentlayer/generated";
 import PostItem from "./post-item";
+import classesTwo from "./hero.module.scss";
 
 export default function News() {
   // Sort posts by date
@@ -15,7 +17,9 @@ export default function News() {
         <div className="py-12 md:py-20 border-t border-gray-800">
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-            <h2 className="h2" data-aos="fade-up">Success Stories</h2>
+            <h2 className="h2" data-aos="fade-up">
+              Success Stories
+            </h2>
           </div>
 
           {/* Articles list */}
@@ -26,6 +30,15 @@ export default function News() {
               ))}
             </div>
           </div>
+        </div>
+        <div className="flex grow justify-center mb-20 flex-wrap items-center">
+          <Link
+            href="#sectionTwo"
+            className={classesTwo.btnSchedule}
+            // onClick={handleScroll}
+          >
+            SCHEDULE FREE CONSULTATION
+          </Link>
         </div>
       </div>
     </section>
