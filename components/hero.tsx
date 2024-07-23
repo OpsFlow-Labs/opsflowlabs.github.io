@@ -101,7 +101,7 @@ export default function Hero() {
           </div>
           <div
             data-aos="fade-up"
-            className="flex grow justify-center md:justify-start mt-20 md:mt-2 flex-wrap items-center"
+            className="flex grow justify-center md:justify-start mt-20 md: mt-0 flex-wrap items-center"
           >
             <Link
               href="https://calendly.com/alex-opsflowlabs/consultation"
