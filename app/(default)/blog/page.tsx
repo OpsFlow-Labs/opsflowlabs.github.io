@@ -16,7 +16,7 @@ export default function Blog() {
   });
 
   const featuredPost = allPosts[0];
-  const posts = allPosts.slice(0, 5);
+  const posts = allPosts.slice(0, 6);
 
   return (
     <>

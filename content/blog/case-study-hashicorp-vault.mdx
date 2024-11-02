@@ -1,0 +1,79 @@
+---
+title: 'Case Study: HashiCorp Vault'
+publishedAt: '2024-11-02'
+image: '/images/vault.avif'
+summary: 'A client of ours in the financial services space needed a secure, scalable, and compliant solution for managing sensitive data and secrets.'
+author: 'Alex Podobnik'
+authorImg: '/images/alex2.jpg'
+tags:
+  - Design
+  - Engineering
+---
+
+## Background
+
+A client of ours in the financial services space needed a secure, scalable, and compliant solution for managing sensitive data and secrets. The company handles vast amounts of customer data, financial records, and critical business information, making security a top priority.
+
+## Challenges
+
+The company faced several challenges in securing its secrets and meeting compliance requirements:
+
+1. Unmanaged Secrets Across Environments: Secrets such as API keys, passwords, and tokens were stored in disparate places, from configuration files to cloud environments. This lack of centralization led to inconsistent security practices and exposure risks.
+
+2. Regulatory Compliance: As a financial institution, the company was subject to regulatory standards like SOC 2 requiring stringent access controls, encryption, and audit trails.
+
+3. Expanding Hybrid Infrastructure: With multiple on-premises data centers and cloud environments, the company needed a unified solution for secrets management across its hybrid infrastructure.
+
+4. Granular Access Control and Auditing Needs: The company lacked detailed logging and role-based access control, making it difficult to monitor and restrict access to sensitive secrets efficiently.
+
+## Implementation Steps
+
+The Vault deployment was executed through several strategic phases:
+
+#### Designing a Secure, Resilient Vault Architecture
+
+1. The firm implemented a high-availability (HA) setup with three Vault clusters in a multi-region architecture. This configuration ensured fault tolerance and consistent access to secrets across global operations.
+A dedicated HSM (Hardware Security Module) was integrated with Vault to manage and protect master keys securely, ensuring that all encryption keys met the firm’s security policies.
+
+#### Centralized Secrets Storage
+
+1. Vault’s centralized storage allowed the firm to store secrets such as API keys, database credentials, and tokens in one secure location.
+Secrets were encrypted at rest and in transit, complying with regulatory encryption standards and reducing the risk of data leakage.
+
+#### Dynamic Secrets for Temporary Access
+
+1. Vault’s dynamic secrets feature enabled the firm to generate short-lived, on-demand credentials for databases and cloud resources, reducing the risk of long-lived credentials.
+This capability allowed the security team to automatically rotate credentials on each use, ensuring that exposed credentials would not remain valid indefinitely, even if compromised.
+
+#### Granular Access Control and RBAC Policies
+
+1. Custom policies were configured in Vault to enforce the principle of least privilege. Employees and applications received access only to the specific secrets they required based on their roles and departments.
+Vault integrated with the firm’s existing LDAP and Single Sign-On (SSO) systems, enabling seamless access management and simplifying user onboarding and offboarding.
+
+#### Comprehensive Auditing and Compliance
+
+1. Vault’s audit logging was enabled to create a detailed record of all access and actions taken on secrets, meeting regulatory requirements for traceability.
+
+2. Audit logs were ingested into the firm’s SIEM (Security Information and Event Management) system, allowing the security team to monitor and detect unusual activity in real time and address potential threats swiftly.
+
+## Results
+
+After deploying HashiCorp Vault, the firm experienced significant benefits across its security, compliance, and operational processes:
+
+1. Enhanced Security: By centralizing secrets management, the firm reduced risks associated with secrets sprawl, minimizing exposure and ensuring that all credentials were encrypted and stored securely.
+
+2. Streamlined Compliance: Vault’s detailed audit logs and encryption standards helped the firm meet the requirements for SOC 2, PCI DSS, and GDPR, simplifying audits and demonstrating compliance to regulators.
+
+3. Improved Access Management: Granular policies and dynamic secrets reduced the risk of unauthorized access, while LDAP and SSO integration allowed for consistent access control and easy user management across environments.
+
+4. Increased Operational Efficiency: Automated secrets rotation and dynamic credentials eliminated the need for manual key rotations and credential updates, saving time for both security and DevOps teams.
+
+#### Key Takeaways
+
+The successful implementation of HashiCorp Vault highlights several key benefits for financial services firms:
+
+1. Centralized Management Improves Security: By storing secrets in one secure system, Vault provided robust security and visibility for managing sensitive data.
+
+2. Dynamic Secrets Minimize Risk: Short-lived credentials reduce the risk associated with static secrets, enhancing security for cloud and database resources.
+
+3. Auditing Capabilities Enable Compliance: Vault’s comprehensive auditing capabilities helped the firm maintain regulatory compliance while ensuring real-time monitoring of access patterns.
