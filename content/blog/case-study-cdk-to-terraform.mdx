@@ -1,0 +1,47 @@
+---
+title: 'Case Study: Helping a Telecom Giant Move from AWS CDK to Terraform and Unlock Developer Productivity'
+publishedAt: '2025-04-02'
+image: '/images/amazon-eks.jpg'
+summary: 'Migrating a telecom giant from AWS CDK to Terraform to simplify infrastructure and boost productivity.'
+author: 'Alex Podobnik'
+authorImg: '/images/alex2.jpg'
+tags:
+  - Product
+  - Engineering
+---
+ 
+## Overview
+
+We recently partnered with a large telecom company to modernize their cloud infrastructure workflows. Their engineering teams had been using AWS CDK (Cloud Development Kit) to manage infrastructure, but as their cloud footprint grew, so did the operational complexity.
+
+We led a migration from CDK to Terraform, and the results were immediate and impactful:
+
+## Simplified Provisioning
+
+Terraform’s declarative model made it significantly easier and faster to provision infrastructure across AWS. Teams no longer had to debug CDK’s generated CloudFormation templates.
+
+## Faster Developer Onboarding
+
+New engineers could ramp up quickly without needing deep expertise in CDK’s TypeScript-based abstractions — Terraform’s HCL syntax proved more approachable and readable.
+
+## Safer Deployments
+
+Terraform’s plan and apply workflow gave teams greater confidence in their changes, leading to fewer surprises and safer infrastructure updates.
+
+## Expanded Tooling Ecosystem
+
+With Terraform, the company tapped into a mature ecosystem — from automated policy enforcement (e.g., OPA) to robust remote state management — something CDK struggled with at their scale.
+
+## Beyond AWS: GitHub and Datadog with Terraform
+
+One of the biggest wins came from extending Terraform beyond AWS:
+
+1. GitHub: The company now manages repositories, teams, and permissions through Terraform. This eliminated manual setup and ensured consistency across all orgs and projects. New repos are now spun up with correct defaults and security controls in place — all automated.
+
+2. Datadog: Dashboards and monitors are now defined as code. This made it easy to standardize alerting across teams, track changes over time, and roll out updates at scale — with full version control.
+
+This cross-platform approach gave them a single source of truth for infrastructure and operations — which significantly reduced drift, improved auditability, and increased confidence across teams.
+
+For a company operating at telecom scale, this wasn’t just a tooling change it was a productivity unlock.
+
+If you're dealing with similar infrastructure complexity and want to simplify, standardize, and scale — Terraform might be the way to go.
