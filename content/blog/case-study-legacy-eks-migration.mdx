@@ -1,0 +1,75 @@
+---
+title: 'Case Study: Migrating Legacy Services from Data Centers to Amazon EKS'
+publishedAt: '2025-04-02'
+image: '/images/amazon-eks.jpg'
+summary: 'How we migrated core services to EKS for faster deployments, lower costs, and greater reliability.'
+author: 'Alex Podobnik'
+authorImg: '/images/alex2.jpg'
+tags:
+  - Product
+  - Engineering
+---
+
+## Overview
+
+A mid-sized SaaS company operating in the payroll space had a suite of legacy services running on virtual machines in a private data center. The systems had grown brittle over time. Deployments were manual, scaling was limited, and reliability suffered. The team didn’t understand how these services were set up since all of the applications pre-date the current engineering team.
+
+We helped them migrate their services to Amazon Elastic Kubernetes Service (EKS) which improved scalability, deployment times, and provided higher resilience.
+
+## Challenges
+
+1. Legacy stack built on VMs with custom bash scripts and tightly coupled services.
+
+2. Manual deployments with limited rollback capabilities.
+
+3. Inconsistent environments across staging and production.
+
+4. Difficulty scaling during seasonal traffic spikes
+
+## Approach
+
+Here are some of the approaches we took:
+
+##### Service Containerization
+
+1. Refactored each legacy service to run in Docker containers.
+
+2. Rewrote bash-based startup logic into health-checked entrypoints.
+
+##### CI/CD Integration
+
+1. Implemented GitHub Actions to build and push container images.
+
+2. ArgoCD used for GitOps-style Kubernetes deployments.
+
+##### Platform Foundation
+
+1. Provisioned EKS using Terraform modules with autoscaling groups, ALBs, IAM roles, and Fluent Bit for logging.
+
+2. Adopted AWS-managed services like RDS and ElastiCache to replace custom database clusters.
+
+
+#### Incremental Migration
+
+1. Shifted low-risk services first, validating patterns and observability tooling.
+
+2. Migrated high-traffic services last with blue/green deployment strategies.
+
+## Results
+
+1. Deployment time reduced from 30 minutes to under 10 minutes.
+
+2. Infrastructure cost lowered by 30% by rightsizing workloads and using spot instances.
+
+3. Scalability improved, allowing the platform to autoscale during peak loads with zero downtime.
+
+4. On-call load dropped, thanks to unified observability through Datadog and automated recovery in Kubernetes.
+
+## Key Takeaways
+
+1. Containerization and GitOps practices made legacy services cloud-native without full rewrites.
+
+2. EKS provided a stable foundation with tight AWS integration, but required strong platform engineering practices.
+
+3. Incremental migration minimized risk and helped build internal confidence.
+
