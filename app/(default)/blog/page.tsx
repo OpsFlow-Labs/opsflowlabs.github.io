@@ -14,9 +14,9 @@ export default function Blog() {
   allPosts.sort((a, b) => {
     return new Date(a.publishedAt) > new Date(b.publishedAt) ? -1 : 1;
   });
-
+  // Blog Post Number
   const featuredPost = allPosts[0];
-  const posts = allPosts.slice(0, 6);
+  const posts = allPosts.slice(0, 7);
 
   return (
     <>
