@@ -1,0 +1,67 @@
+---
+title: 'Case Study: Zero-Downtime Migration of Legacy Services to Kubernetes'
+publishedAt: '2025-09-26'
+image: '/images/legacy-migration.png'
+summary: 'A financial services company successfully migrated legacy applications to Kubernetes with zero downtime, reducing deployment cycles from weeks to under a day while improving uptime to 99.9%.'
+author: 'Alex Podobnik'
+authorImg: '/images/alex2.jpg'
+tags:
+  - Product
+  - Engineering
+---
+
+## Overview
+
+A mid-sized financial services company approached us with a pressing issue. Their customer-facing applications were hosted on legacy virtual machines and deployed manually. Every release required scheduled downtime, frustrating both engineers and end users.
+
+As the business expanded, the existing infrastructure could not keep up with increasing demands for reliability and faster delivery of new features.
+
+## Objectives
+
+The client wanted to modernize their infrastructure by migrating core services to Kubernetes without any service interruption. They were aiming to accelerate release cycles, improve uptime, and gain better visibility into system health.
+
+At the same time, management insisted that the migration must not affect customers or revenue streams.
+
+## Challenges
+
+Before working with us, deployments were slow, manual, and error-prone. Applications were built as tightly coupled monoliths, which made scaling difficult and risky.
+
+Scheduled downtime during updates had become a norm, with each deployment taking hours to execute and verify. Monitoring tools were fragmented and reactive, leaving teams struggling to understand the root cause of incidents.
+
+The organization was also concerned about the risk of migrating critical live systems without a robust fallback plan.
+
+## Our Approach
+
+We designed and executed a phased migration program with zero-downtime as the guiding principle.
+
+We began with a full assessment of the client’s services, mapping dependencies and traffic flows. This helped us define migration waves, starting with lower-risk services to validate the process before moving critical workloads. For each wave we prepared rollback strategies to guarantee business continuity.
+
+Infrastructure was fully codified using Terraform and Helm, ensuring reproducibility and version control across environments. Kubernetes clusters were provisioned for staging and production, allowing us to test workloads in parallel before moving traffic. 
+
+To avoid downtime during cutovers, we implemented canary deployment strategies. This allowed new services to run alongside existing ones, with traffic gradually shifted after automated health checks confirmed stability. If any anomaly appeared, rollback could be triggered in minutes.
+
+A robust CI/CD pipeline was introduced to replace manual deployments. With automated builds, tests, and releases, the client’s teams could now deploy code changes multiple times per day with confidence. Smoke tests and health checks ran automatically after each deployment.
+
+Finally, observability was placed at the center of the transformation. We set up centralized logging and metrics using Prometheus and Grafana, combined with OpenTelemetry for distributed tracing. This provided engineers with real-time insights into both the legacy and Kubernetes environments during migration.
+
+## Outcomes
+
+The migration was completed without a single minute of unplanned downtime. For the first time, the client was able to deploy critical services without impacting users.
+
+Deployment cycles that previously took weeks were reduced to less than a day. Uptime improved from around 99% to consistently above 99.9%.
+
+The new monitoring stack gave the teams immediate visibility into system performance, allowing them to detect and resolve issues before they became customer-facing. Operational costs decreased as repetitive manual work was eliminated and infrastructure became standardized through code.
+
+## Lessons Learned
+
+The project showed that modernization is as much about people as technology. By gradually onboarding teams and providing documentation, internal engineers quickly adopted new workflows.
+
+Incremental rollouts and a strong rollback plan proved essential to achieving zero downtime. Building observability from the start gave confidence throughout the migration process.
+
+Most importantly, the case demonstrated that with disciplined planning and automation, it is possible to fully modernize critical systems without disrupting business operations.
+
+## Conclusion
+
+The client successfully transitioned from fragile legacy deployments to a modern, resilient Kubernetes platform. The transformation delivered higher availability, faster releases, and reduced operational overhead all without a single disruption to customer experience.
+
+This project highlights how careful strategy, automation, and observability can turn one of the riskiest IT initiatives into a seamless success.
