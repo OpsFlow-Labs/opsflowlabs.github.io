@@ -1,0 +1,57 @@
+---
+title: 'Case Study: Migrating Legacy SaaS Application to AWS Fargate'
+publishedAt: '2025-10-02'
+image: '/images/legacy-to-fargate.png'
+summary: 'From Legacy VMs to AWS Fargate with Zero-Downtime Migration.'
+author: 'Alex Podobnik'
+authorImg: '/images/alex2.jpg'
+tags:
+  - Product
+  - Engineering
+---
+
+## Overview
+
+A SaaS company approached us with a challenge familiar to many growing businesses. Their legacy infrastructure was struggling to keep up with customer demand. Deployments were slow and risky, downtime was common during releases, and the lack of redundancy meant that any incident could quickly escalate into a full-scale outage.
+
+The client's goal was clear: modernize their application infrastructure to achieve faster deployments, improve reliability, and provide a more resilient environment all while ensuring that customer experience was not disrupted.
+
+## Objectives
+
+The project was focused on several key outcomes:
+
+1. Enable quicker and more predictable deployment times
+
+2. Improve reliability and uptime
+
+3. Introduce automated rollback mechanisms in case of failures
+
+4. Strengthen redundancy across environments to reduce the impact of incidents
+
+## Challenges
+
+The Ruby on Rails SaaS application was hosted on a set of legacy virtual machines with limited automation. Deployments were executed manually and often required coordinated downtime. Each release came with the risk of service interruptions, frustrating engineers and end users alike.
+
+The lack of redundancy and automatic recovery mechanisms meant that even minor failures could result in significant outages. Additionally, the infrastructure setup made scaling unpredictable and time-consuming, preventing the business from responding quickly to spikes in demand.
+
+## Our Approach
+
+We designed a migration strategy that would bring the client's application into a modern, container-based environment on AWS Fargate.
+
+The first step was to containerize the Ruby on Rails application and its dependencies. This ensured consistent builds and simplified deployments across environments. We then introduced Infrastructure as Code to standardize provisioning and configuration, ensuring that the entire environment could be reproduced reliably.
+
+To minimize risk during the migration, we adopted a phased rollout approach. Initial services were moved to Fargate in parallel with the legacy environment, allowing us to validate stability before directing production traffic. Automated health checks and monitoring provided early detection of issues, while blue-green and canary deployment strategies ensured zero disruption to end users.
+
+A robust CI/CD pipeline was implemented to automate builds, tests, and deployments. With rollback mechanisms in place, any failure could be automatically reverted within minutes, restoring the application to its last known stable state. Finally, redundancy was enhanced by leveraging AWS services that ensured the application could withstand failures without customer impact.
+
+## Outcomes
+
+The migration delivered significant improvements:
+
+Deployment times were reduced from hours to minutes, allowing the client to release features and fixes more quickly. Reliability improved dramatically, with uptime consistently above 99.9%. The ability to automatically rollback during deployment failures removed the fear of downtime, empowering the team to deploy with confidence. Redundancy built into the AWS Fargate environment ensured that services remained available even in the face of unexpected issues.
+
+For the client's engineering teams, the transformation meant less time spent firefighting and more time focusing on building value for customers. For end users, it translated into a smoother, more reliable experience of the SaaS application.
+
+## Conclusion
+
+By migrating their Ruby on Rails SaaS application to AWS Fargate, the client modernized their infrastructure without disrupting business operations. We helped them achieve faster deployments, improved reliability, automated recovery, and a more resilient platform delivering a robust foundation for growth in a competitive SaaS market.
