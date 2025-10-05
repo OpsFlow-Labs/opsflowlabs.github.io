@@ -140,7 +140,7 @@ export default function Footer() {
                       // href="/"
                       className="text-gray-400 transition duration-150 ease-in-out"
                     >
-                      +1 888 884 1347
+                      +1 647 483 4399
                     </span>
                   </li>
                   {/* <li className="mb-1">
