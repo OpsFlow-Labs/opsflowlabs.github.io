@@ -1,0 +1,59 @@
+---
+title: 'Case Study: Enhancing Security and Visibility with HashiCorp Vault'
+publishedAt: '2025-10-07'
+image: '/images/case-study-vault.png'
+summary: 'A government software provider centralized secret management and improved security using HashiCorp Vault with dynamic credentials and Infrastructure as Code.'
+author: 'Alex Podobnik'
+authorImg: '/images/alex2.jpg'
+tags:
+  - Product
+  - Engineering
+---
+
+## Overview
+
+A client developing software solutions for foreign governments reached out to us with a mission-critical goal: to strengthen their overall security posture. Their systems handled sensitive data and credentials across multiple environments, but secret management was largely manual, inconsistent, and lacked centralized control.
+
+Given the nature of their work, security, visibility, and traceability were non-negotiable. They needed a solution that could securely manage credentials for both users and applications, while maintaining full auditability and compliance with strict internal and external security policies.
+
+## Objectives
+
+The client aimed to achieve:
+
+1. Improved overall security posture through centralized secret management
+
+2. Time-limited credentials for users and dynamic credentials for applications
+
+3. Complete audit logging of secret access and usage
+
+4. Centralized, visible configuration management through Infrastructure as Code
+
+## Challenges
+
+Before engaging with us, the client's environment relied on a mixture of static credentials and manual secret rotation. Credentials were often stored across multiple systems, creating operational complexity and potential security risks.
+
+Without a unified audit trail, it was difficult to determine who accessed which secrets and when. Configuration drift between environments made it challenging to maintain visibility and compliance. The team needed a scalable and automated approach that could secure sensitive data while maintaining operational efficiency.
+
+## Our Approach
+
+OpsFlow Labs introduced HashiCorp Vault as the central secret management solution, integrated across all stages of the client's software delivery pipeline.
+
+The first step involved deploying Vault with high availability, ensuring redundancy and resilience. All static credentials were gradually replaced with time-limited credentials for users and dynamic credentials for applications, generated on demand and automatically revoked after expiration. This drastically reduced the window of exposure in case of compromised credentials.
+
+Audit logging was enabled to track all access to secrets. Every operation—whether by a user or an application—was logged with detailed metadata, giving the security team full visibility and control. These logs were integrated with the client's existing monitoring systems, allowing for real-time insights and alerts.
+
+To simplify configuration management and ensure consistency, the entire Vault setup was defined using Terraform. Managing configuration as code provided a single source of truth and made the entire security setup transparent. Teams could now review, version, and audit configuration changes just like application code.
+
+## Outcomes
+
+By implementing HashiCorp Vault, the client achieved a measurable improvement in both security and operational visibility.
+
+Time-limited and dynamic credentials eliminated the need for manual secret rotation and reduced credential leakage risks. Audit logging gave the organization full traceability over secret usage, supporting compliance and incident response requirements. With Terraform managing configuration centrally, infrastructure teams gained visibility into every change and could quickly identify potential misconfigurations before they reached production.
+
+Ultimately, Vault became the cornerstone of the client's security architecture—securing secrets across development, staging, and production environments, while enabling the agility needed for modern software delivery.
+
+## Conclusion
+
+Through close collaboration with OpsFlow Labs, the client successfully implemented HashiCorp Vault to unify and strengthen secret management. The combination of dynamic credentials, audit logging, and Infrastructure as Code transformed their approach to security from a manual, fragmented process to an automated, transparent, and compliant system.
+
+This engagement proved that when security is automated and codified, it not only reduces risk but also empowers teams to innovate with confidence.
