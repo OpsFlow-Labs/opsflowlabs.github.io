@@ -1,0 +1,49 @@
+---
+title: 'Case Study: Streamlining Deployment Pipelines for an Audio Streaming Platform'
+publishedAt: '2025-10-14'
+image: '/images/case-study-audio-streaming-2.png'
+summary: 'How we helped an audio streaming platform standardize their CI/CD pipelines, reducing deployment errors and improving security across dozens of services.'
+author: 'Alex Podobnik'
+authorImg: '/images/alex2.jpg'
+tags:
+  - Product
+  - Engineering
+---
+
+## Background
+
+A client in the audio streaming industry approached us with a recurring problem. Their deployment pipelines were inconsistent across multiple services, leading to unpredictable release cycles, missed alerts, and unnecessary rework. Each service had its own way of handling tests and deployments, which made it difficult to maintain a unified standard as the company scaled.
+
+## Challenges
+
+1. Inconsistent Workflows: The engineering teams managed dozens of services, each with slightly different deployment workflows. Some pipelines lacked testing steps, while others didn't send notifications when failures occurred.
+
+2. Missed Issues: As a result of inconsistent pipelines, issues often went unnoticed until they impacted production, creating unnecessary firefighting and delays.
+
+3. Security Gaps: Security testing was not systematically integrated, and there was no shared approach to quality assurance across services.
+
+4. Maintenance Burden: Without a central framework, pipeline management had become a growing maintenance burden as the company scaled.
+
+## Migration Process
+
+1. Assessment and Planning: We conducted a detailed analysis of the client's deployment processes to identify common gaps and opportunities for standardization. We evaluated their existing workflows and devised a plan to implement reusable pipeline templates.
+
+2. Pipeline Library Design: We designed a reusable pipeline library that could be integrated into any service, providing a consistent structure for building, testing, and deploying code while allowing teams to customize parameters where needed.
+
+3. Implementation with GitHub Actions: Using GitHub Actions, we implemented the new pipelines with shared templates that included built-in security testing to catch vulnerabilities early, consistent test strategies across all services to ensure reliability before releases, and automated notifications that alert the correct team whenever a failure occurs.
+
+4. Rollout and Support: We worked closely with engineering teams to integrate the new pipeline library across their services, providing guidance and support throughout the transition to ensure smooth adoption.
+
+## Outcomes
+
+1. Improved Consistency: After rolling out the new pipeline library, the client experienced a dramatic improvement in operational consistency. Deployment failures were identified and resolved faster, with issues automatically routed to the responsible teams.
+
+2. Enhanced Security: Security scans became part of every build, improving overall platform security posture and reducing vulnerabilities in production.
+
+3. Faster Releases: Release times shortened, as teams no longer had to rebuild pipelines from scratch for each service, accelerating time to market.
+
+4. Better Visibility: By centralizing workflows with GitHub Actions, the client's engineering organization gained a clear view of every stage of the deployment process, reducing uncertainty and improving collaboration.
+
+## Conclusion
+
+The implementation of standardized deployment pipelines marked a transformative shift in the client's CI/CD practices. By codifying best practices into shared pipelines, the client was able to maintain agility while improving reliability. We were able to transform their fragmented CI/CD setup into a unified, efficient deployment ecosystem that not only reduced errors and increased security but also empowered teams to ship updates with greater confidence and speed, setting a new foundation for reliable growth in the audio streaming space.
