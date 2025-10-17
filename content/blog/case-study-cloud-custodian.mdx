@@ -1,0 +1,70 @@
+---
+title: 'Case Study: Automating Cloud Governance with Cloud Custodian'
+publishedAt: '2025-10-17'
+image: '/images/cloud-custodian-logo.png'
+summary: 'A global enterprise with multiple AWS accounts faced growing challenges in managing cloud resources efficiently, leading to unnecessary costs and security exposure.'
+author: 'Alex Podobnik'
+authorImg: '/images/alex2.jpg'
+tags:
+  - Cloud Governance
+  - AWS
+  - Automation
+---
+
+## Background
+
+A global enterprise with multiple AWS accounts faced a growing challenge in managing its cloud resources efficiently. Over time, orphaned snapshots, unused volumes, and idle instances accumulated, leading to unnecessary costs and security exposure. Each team operated within its own AWS account, making it difficult to maintain consistent visibility and enforce governance policies across the entire organization.
+
+The client approached us to design and implement a solution that would automatically detect and handle unused or misconfigured resources while keeping teams informed about their cloud inventory.
+
+## Objectives
+
+The main objectives were:
+
+- Identify and remove orphaned and unused resources across all AWS accounts
+
+- Improve cost efficiency through right sizing and elimination of idle assets
+
+- Increase visibility and accountability by reporting resource usage to each team
+
+- Automate governance to reduce manual intervention and human error
+
+## Challenges
+
+The client's environment included dozens of AWS accounts managed by different teams. Each had its own practices and standards, resulting in inconsistent governance and limited visibility. Manual cleanup efforts were time-consuming and error-prone. Without automation, cloud sprawl and cost overruns became increasingly difficult to control.
+
+The solution needed to work across multiple accounts, apply consistent rules, and generate actionable insights without disrupting existing workloads.
+
+## Our Approach
+
+We implemented Cloud Custodian, an open-source rules engine for cloud governance, as the foundation for automated resource management.
+
+We began by defining a set of policies to detect and act on orphaned resources, such as unused EBS volumes, outdated snapshots, and unassociated Elastic IPs. Idle instances and other underutilized resources were identified through usage metrics and automatically flagged for review or termination.
+
+Cloud Custodian was configured to run across all AWS accounts, ensuring organization-wide coverage and consistent enforcement of policies. The automation also included reporting capabilities—each team received detailed summaries of their active resources, enabling greater awareness and accountability for their infrastructure usage.
+
+Beyond cleanup, we implemented right-sizing recommendations, ensuring that workloads were matched to appropriate instance types and storage tiers. This further optimized costs and improved performance efficiency.
+
+To maintain transparency, all actions taken by Cloud Custodian were logged and auditable, giving both engineers and leadership confidence in the automation process.
+
+## Outcomes
+
+By integrating Cloud Custodian into their cloud management workflow, the client achieved significant improvements in both efficiency and governance:
+
+1. **Cost Reduction**: Orphaned resources were automatically detected and removed, reducing waste and monthly cloud spend.
+
+2. **Resource Optimization**: Idle and underutilized assets were identified and optimized through right-sizing recommendations.
+
+3. **Improved Visibility**: Teams gained better visibility into their cloud inventories and could act on automated reports.
+
+4. **Consistent Governance**: Governance policies were enforced across all AWS accounts without additional manual work.
+
+The organization now benefits from a cleaner, leaner, and more secure cloud environment maintained automatically and monitored continuously.
+
+## Key Lessons Learned
+
+Automated governance is most effective when paired with visibility. By ensuring that teams received detailed reports rather than simply deleting unused resources, Cloud Custodian empowered engineers to take ownership of their cloud usage. Right-sizing and continuous cleanup not only optimized costs but also strengthened the organization's overall cloud hygiene.
+
+## Conclusion
+
+Through Cloud Custodian, we helped the client bring order and automation to a complex multi-account AWS environment. What was once a manual, error-prone process became a streamlined, data-driven system for continuous optimization and governance. The result was a more secure, efficient, and cost-effective cloud infrastructure, fully aligned with modern best practices.
