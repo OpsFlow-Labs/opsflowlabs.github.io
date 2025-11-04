@@ -1,0 +1,70 @@
+---
+title: 'Case Study: Improving Security Posture Through Audit Logging'
+publishedAt: '2025-11-04'
+image: '/images/audit-logging.png'
+summary: 'A SaaS provider in a highly regulated industry needed visibility into credential access patterns to strengthen their security posture and meet compliance requirements.'
+author: 'Alex Podobnik'
+authorImg: '/images/alex2.jpg'
+tags:
+  - Security
+  - Audit Logging
+  - Compliance
+---
+
+## Background
+
+When it comes to secrets management, visibility is a critical and often underestimated component of a mature security posture. For one of our clients, a SaaS provider operating in a highly regulated industry, gaining visibility into credential access patterns was the missing piece in their broader security strategy.
+
+They already used HashiCorp Vault to manage secrets, but lacked a way to answer key operational questions: Who was accessing credentials? When? From where? And under what circumstances?
+
+## The Challenge
+
+The client's infrastructure supported multiple environments. Development, staging, and production each with its own access policies and usage patterns. While Vault served as the backbone for managing secrets, its power was underutilized without proper audit visibility.
+
+The absence of detailed logging created several issues:
+
+- **Limited traceability**: Teams couldn't easily determine the source of secret usage during incidents.
+
+- **Security blind spots**: Potential misuse or credential leaks could go undetected.
+
+- **Compliance gaps**: The company needed stronger evidence trails for internal and external audits.
+
+- **Operational inefficiency**: Security and DevOps teams had to manually investigate credential activity, often without clear answers.
+
+This meant that, even with a robust secrets management system, they lacked the visibility necessary to enforce and demonstrate security best practices.
+
+## Our Approach
+
+Our goal was to help the client move from reactive monitoring to proactive visibility. We achieved this by leveraging Vault's audit logging capabilities and integrating them into the client's existing observability and alerting systems.
+
+The approach consisted of several key steps:
+
+First, we enabled and configured Vault audit devices to record every credential access event across all environments. We then standardized log formats to make Vault audit events compatible with the client's existing SIEM (Security Information and Event Management) system.
+
+We integrated logs with their centralized logging stack to ensure end-to-end visibility across applications and environments. This allowed us to create alerting rules to detect suspicious or unusual activity patterns, such as unexpected credential requests or high-frequency access attempts.
+
+Finally, we built dashboards to visualize usage trends, user access behavior, and secret lifecycle metrics. By centralizing all audit data, the client could finally connect the dots between credential usage, application behavior, and user activity all from a single pane of glass.
+
+## Outcomes
+
+Once Vault audit logging was in place, the client saw immediate improvements across their security operations:
+
+1. **Full Visibility**: Every credential request was now logged and traceable, including the user, service, and timestamp.
+
+2. **Improved Detection and Response**: Suspicious activity could be identified and acted upon in real time.
+
+3. **Compliance Readiness**: The audit trail provided verifiable evidence for internal governance and external compliance audits.
+
+4. **Operational Efficiency**: The DevOps team reduced time spent investigating credential-related incidents by over 60%.
+
+Beyond measurable gains, this change also shifted the organization's mindset. Security became an observable system, not an assumption.
+
+## Key Lessons Learned
+
+With full audit visibility, the client's Vault deployment evolved from a secrets store into a true security observability layer. They can now not only manage credentials securely, but also prove that every access is justified, logged, and reviewable.
+
+This implementation laid the groundwork for future automation, including automated anomaly detection and policy-driven remediation, helping the company continue to evolve its security posture in line with modern DevSecOps practices.
+
+## Conclusion
+
+Through the implementation of comprehensive audit logging, we helped the client transform their HashiCorp Vault deployment into a complete security observability solution. This strengthened their security posture, improved incident response capabilities, and established a solid foundation for ongoing compliance and operational excellence.
