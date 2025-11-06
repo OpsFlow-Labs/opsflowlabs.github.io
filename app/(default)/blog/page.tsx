@@ -16,7 +16,7 @@ export default function Blog() {
   });
   // Blog Post Number
   const featuredPost = allPosts[0];
-  const posts = allPosts.slice(0, 20);
+  const posts = allPosts.slice(0, 21);
 
   return (
     <>

@@ -1,0 +1,59 @@
+---
+title: 'Case Study: Securing CI/CD Pipelines with Vault Integration'
+publishedAt: '2025-11-06'
+image: '/images/cicd-vault-security.png'
+summary: 'A growing SaaS company eliminated hardcoded credentials across their CI/CD pipelines by integrating HashiCorp Vault for dynamic secrets management.'
+author: 'Alex Podobnik'
+authorImg: '/images/alex2.jpg'
+tags:
+  - Security
+  - CI/CD
+  - Secrets Management
+  - Automation
+---
+
+## Background
+
+Continuous delivery thrives on automation, but automation often introduces hidden risks when credentials are not properly managed. One of our clients, a growing SaaS company with distributed teams and multiple deployment pipelines, faced an ongoing challenge: credentials were hardcoded across various build configurations, stored in plain text, and reused across environments.
+
+Every security audit flagged this as a major concern. Developers struggled with maintaining agility while meeting increasingly strict compliance requirements. The client needed a secure, scalable way to manage secrets without slowing down delivery.
+
+## The Challenge
+
+With several engineering teams managing independent services, secrets had proliferated across repositories and environments. Each pipeline required access to APIs, databases, and third-party services, and managing these credentials manually was both time-consuming and error-prone.
+
+Rotating credentials often required downtime or manual updates in multiple places, which meant that outdated secrets remained active for too long. Moreover, every audit cycle required extensive verification of where and how credentials were stored. This created friction between security and development, undermining the reliability of deployments.
+
+## The Solution
+
+OpsFlow Labs worked with the client to integrate HashiCorp Vault directly into their CI/CD pipelines, ensuring that secrets were delivered dynamically and securely without developer intervention.
+
+We began by mapping out all pipelines running on GitHub Actions and Jenkins, identifying where secrets were being hardcoded. Then we implemented a centralized secrets management system in Vault, allowing the pipelines to request credentials on demand.
+
+Using Vault's dynamic secrets and short-lived tokens, each deployment now retrieves temporary credentials that expire automatically after use. This drastically reduced the window of exposure in case a token were ever compromised.
+
+To maintain visibility, we configured audit logging and policy-based access controls, ensuring that only the right services could access the credentials they needed. All of this was integrated seamlessly into existing workflows, requiring minimal changes to pipeline configurations.
+
+## The Outcome
+
+The integration eliminated hardcoded credentials entirely from the client's build and deployment processes. Security teams gained real-time visibility into secret usage, while developers continued deploying with the same ease and speed as before.
+
+Key results included:
+
+- **Secure Dynamic Delivery**: Vault integration enabled secure, on-demand credential delivery directly to pipelines.
+
+- **Automatic Rotation**: Short-lived tokens were automatically rotated with every deployment, minimizing exposure risk.
+
+- **Reduced Audit Overhead**: Centralized logging and policy controls simplified compliance and security reviews.
+
+- **Maintained Development Velocity**: Improved compliance posture without slowing down development processes.
+
+The client's pipelines are now both secure and resilient, demonstrating that strong security doesn't have to come at the cost of agility.
+
+## Key Lessons Learned
+
+Integrating secrets management into CI/CD pipelines early prevents security debt from accumulating. Dynamic credentials and short-lived tokens provide defense-in-depth without disrupting developer workflows. When security tooling is transparent to developers, adoption becomes natural rather than forced.
+
+## Conclusion
+
+Through the integration of HashiCorp Vault into their CI/CD infrastructure, we helped the client eliminate hardcoded credentials and establish a secure, automated secrets delivery system. This transformation not only strengthened their security posture but also streamlined their compliance processes, allowing development teams to maintain their velocity while meeting stringent security requirements.
