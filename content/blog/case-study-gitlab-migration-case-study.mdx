@@ -1,0 +1,75 @@
+---
+title: 'Case Study: Migrating GitLab from On-Premises to the Cloud'
+publishedAt: '2025-11-14'
+image: '/images/gitlab-migration.png'
+summary: 'A Fortune 500 company relied on a heavily customized on-premises GitLab instance that had grown difficult to scale, maintain, and secure.'
+author: 'Alex Podobnik'
+authorImg: '/images/alex2.jpg'
+tags:
+  - GitLab
+  - Cloud Migration
+  - DevOps
+  - CI/CD
+---
+
+## Overview
+
+A Fortune 500 company relied on a heavily customized on-premises GitLab instance that had grown difficult to scale, maintain, and secure. As development activity expanded across dozens of business units, their internal DevOps platform team faced increasing challenges: fragmented group structures, inconsistent access control, limited observability, and CI/CD workloads that strained local infrastructure.
+
+We were engaged to design and execute a seamless migration to GitLab's cloud offering without interrupting ongoing development or breaking any existing pipelines.
+
+## Key Challenges
+
+#### 1. Restructuring a Complex Group & Project Hierarchy
+
+Years of organic growth resulted in duplicated groups, inconsistent naming conventions, and unclear ownership lines. A direct lift-and-shift would have carried these issues into the cloud, causing long-term governance problems.
+
+**What we solved:**
+
+We performed a full audit of the existing structure and designed a future-ready hierarchy aligned with business domains and security boundaries. We consolidated redundant groups and mapped access levels to least-privilege standards, creating a clean foundation for ongoing governance.
+
+#### 2. Integrating SSO with Okta Without Disruption
+
+The client required unified authentication across all developer tools. Their on-premises GitLab relied on legacy LDAP configurations, while the cloud environment required a clean Okta-based SAML setup.
+
+**What we solved:**
+
+We implemented SAML SSO with Okta and configured SCIM for automated provisioning. GitLab roles were mapped to Okta groups to eliminate manual user management. The transition was executed with zero downtime, allowing users to seamlessly log in with their new identities without interruption.
+
+#### 3. Managing GitLab Subscription Tiers Across Business Units
+
+The enterprise had multiple departments funding separate GitLab subscriptions, leading to uneven feature availability and operational overhead.
+
+**What we solved:**
+
+We centralized license management into a unified enterprise subscription and established governance policies for seat allocation and usage visibility. Automated reporting was implemented for finance and platform owners to maintain ongoing cost control.
+
+#### 4. Maintaining CI/CD Continuity During Migration
+
+A critical requirement was ensuring no pipeline failures, no broken runners, and no impact to production releases. The existing environment used a mix of shell runners, autoscaling runners, and custom integrations with internal systems.
+
+**What we solved:**
+
+We staged pipeline testing using mirrored projects to ensure parity between environments. Runners were migrated to cloud autoscaling infrastructure with dynamic capacity. All protected branches, environment variables, and deployment credentials were revalidated. The final cutover was executed during a scheduled maintenance window with zero failed deployments.
+
+## Results
+
+The migration delivered substantial improvements across security, operations, and developer experience:
+
+1. **Zero-Downtime Migration**: Full migration completed with zero interruption to development workflows.
+
+2. **Optimized Structure**: Unified, optimized group structure that simplifies governance and reduces administrative overhead.
+
+3. **Automated Identity Management**: Okta-driven SSO and SCIM provisioning eliminated manual identity management and improved auditability.
+
+4. **Centralized Licensing**: Improved cost control and standardized features across all teams.
+
+5. **Enhanced CI/CD Performance**: Autoscaling cloud runners and cleaner pipeline configurations delivered measurable performance improvements.
+
+6. **Stronger Security**: Clearer boundaries, improved visibility, and reliable access control strengthened the overall security posture.
+
+7. **Reduced Maintenance Burden**: GitLab Cloud handles operational responsibilities such as upgrades, security patching, and system reliability. This freed the internal DevOps team to focus on higher-value engineering initiatives instead of platform upkeep.
+
+## Conclusion
+
+This migration delivered more than a simple platform upgrade. It created a scalable, governable, and future-proof DevOps foundation for the entire enterprise. With a cleaner structure, centralized identity management, reduced maintenance overhead, and modernized CI/CD infrastructure, the client is now positioned to support rapid growth without compromising performance or security.
