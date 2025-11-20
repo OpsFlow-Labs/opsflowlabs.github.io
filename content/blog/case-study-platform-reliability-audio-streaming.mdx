@@ -1,0 +1,92 @@
+---
+title: 'Case Study: Improving Platform Reliability for an Audio Streaming Service'
+publishedAt: '2025-11-20'
+image: '/images/platform-reliability.png'
+summary: 'A fast-growing audio streaming company relied on a legacy platform that had become difficult to understand, hard to update, and increasingly fragile.'
+author: 'Alex Podobnik'
+authorImg: '/images/alex2.jpg'
+tags:
+  - Platform Engineering
+  - HashiCorp Stack
+  - Reliability
+---
+
+## Overview
+
+A fast-growing audio streaming company relied on a legacy platform built years earlier by various teams. Over time, their infrastructure had become difficult to understand, hard to update, and increasingly fragile. The platform was powered by HashiCorp Consul for service discovery, Vault for secrets management, and Nomad for workload orchestration. However, because the system evolved organically, no team had a complete grasp of how all components interacted.
+
+Deployments were inconsistent, outages were becoming more frequent, and operational overhead was rising.
+
+We were brought in to assess the current system, stabilize it, and modernize the platform to enable long-term reliability.
+
+## Key Challenges
+
+#### 1. Lack of Clarity in the Legacy Architecture
+
+The client had limited documentation and incomplete diagrams. Many services were registered incorrectly in Consul, and several workloads running on Nomad were misconfigured or using outdated patterns.
+
+**What we solved:**
+
+- Performed a full audit of the Consul service mesh and removed deprecated or stale service definitions
+
+- Mapped all dependencies between services, workloads, and secrets
+
+- Identified high-risk components and single points of failure
+
+#### 2. Unreliable Nomad Workload Scheduling
+
+Workloads were scheduled inconsistently across the Nomad cluster, resulting in uneven resource usage and occasional service unavailability.
+
+**What we solved:**
+
+- Reconfigured job specifications to follow modern best practices
+
+- Improved resource allocation settings to prevent noisy-neighbor issues
+
+- Introduced health checks and restart strategies to reduce downtime
+
+#### 3. Legacy Vault Integration with Expiring Credentials
+
+Several older services relied on static credentials and legacy Vault paths that made rotation difficult and introduced unnecessary risk.
+
+**What we solved:**
+
+- Migrated services toward dynamic secrets where possible
+
+- Cleaned up the Vault structure to simplify access policies
+
+- Improved token and lease management to avoid unexpected expirations
+
+#### 4. Missing or Outdated Monitoring and Alerting
+
+The platform lacked visibility into failures, which made incident response slow and reactive.
+
+**What we solved:**
+
+- Added health monitoring for Consul, Vault, and Nomad clusters
+
+- Established platform-level alerting for degraded performance
+
+- Integrated the system with the client's existing observability stack
+
+## Results
+
+By bringing structure, clarity, and modern best practices to a complex legacy environment, we transformed an aging infrastructure into a reliable and maintainable platform:
+
+- **Stabilized Infrastructure**: The entire Consul, Vault, and Nomad ecosystem was modernized through a structured approach
+
+- **Reduced Downtime**: Platform outages and service instability were significantly decreased
+
+- **Improved Troubleshooting**: Service registration accuracy and dependency mapping enabled faster incident resolution
+
+- **Enhanced Reliability**: Updated Nomad configuration patterns boosted workload stability
+
+- **Strengthened Security**: Static credentials were replaced with dynamic Vault secrets, improving the overall security posture
+
+- **Increased Confidence**: Clearer visibility and standardized configurations gave engineering teams greater operational confidence
+
+## Conclusion
+
+Through this modernization effort, we not only restored platform reliability but also gave internal teams the confidence and visibility they needed to operate the system effectively going forward. The client now has a stable foundation for scaling their audio streaming services without sacrificing performance, security, or developer velocity.
+
+This engagement demonstrated how bringing structure and best practices to a complex legacy environment can transform operational challenges into a competitive advantage.
