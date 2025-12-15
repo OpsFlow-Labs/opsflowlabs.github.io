@@ -1,0 +1,121 @@
+---
+title: 'Case Study: Scaling Multi-Account Cloud Management with Infrastructure as Code'
+publishedAt: '2025-12-15'
+image: '/images/multi-account-iac.png'
+summary: 'A global services company managing dozens of AWS accounts for their clients faced fragmented environments, inconsistent guardrails, and limited visibility across their cloud organization.'
+author: 'Alex Podobnik'
+authorImg: '/images/alex2.jpg'
+tags:
+  - Infrastructure as Code
+  - AWS Organizations
+  - Cloud Governance
+  - Terraform
+---
+
+## Overview
+
+A global services company managing dozens of AWS accounts for their clients faced a familiar challenge: rapid growth created fragmented environments, inconsistent guardrails, and limited visibility across their cloud organization. With teams provisioning resources manually and using different processes per client, maintaining compliance and tracking changes became increasingly difficult.
+
+OpsFlow Labs partnered with the client to redesign their cloud foundation using Infrastructure as Code (IaC). By adopting Terraform to manage AWS Organizations and standardizing reusable modules, the company transformed the way they provision, scale, and govern cloud accounts.
+
+## The Challenge
+
+The customer operated as a service provider, responsible for provisioning and managing AWS accounts for multiple clients. As their portfolio expanded, so did the complexity:
+
+- Manual onboarding of new accounts led to configuration drift
+
+- Lack of standardized guardrails made compliance hard to enforce
+
+- Limited documentation, since many configurations lived in individual engineers' heads
+
+- No centralized versioning, making it difficult to trace changes across environments
+
+- Difficulty scaling, because every new client required custom setup
+
+The client needed a unified, repeatable, and auditable way to manage cloud organizations without slowing down delivery.
+
+## Our Approach
+
+OpsFlow Labs introduced a cloud-governance framework built entirely on Terraform to manage AWS Organizations and all related account-level resources.
+
+### 1. Defining the Organization in Terraform
+
+We modeled the entire AWS Organization using Terraform:
+
+- Organizational units
+
+- Account creation and provisioning workflows
+
+- Service control policies (SCPs)
+
+- CloudTrail, Config, and baseline security settings
+
+This created a single source of truth for the company's multi-account architecture.
+
+### 2. Implementing Guardrails and Compliance Controls
+
+We embedded mandatory guardrails directly into reusable Terraform modules:
+
+- Logging and monitoring baselines
+
+- Access control policies
+
+- Mandatory tagging standards
+
+- Pre-approved networking patterns
+
+- Automated account hardening steps
+
+Each new account automatically inherited the same security and compliance posture, no manual steps required.
+
+### 3. Building Versioned Modules for Scalability
+
+To support dozens of distinct client environments, OpsFlow Labs designed a modular system with clear versioning:
+
+- Core modules for organization-level resources
+
+- Account baseline modules
+
+- Optional add-on modules for advanced client needs
+
+This approach allowed teams to roll out updates, audit differences, and scale consistently across new and existing accounts.
+
+### 4. Integrating IaC with Source Control and CI/CD
+
+All configuration and module versions were tracked in Git.
+
+Changes were validated through:
+
+- Pull-request reviews
+
+- Automatic checks
+
+- Controlled deployment pipelines
+
+This ensured full traceability and minimized the operational risk of misconfigurations.
+
+## Results
+
+**Consistent and Compliant Multi-Account Environments**
+
+Every new AWS account launched with predictable, secure defaults and automated guardrails.
+
+**Improved Visibility and Change Tracking**
+
+With all cloud organization resources in code, the company gained complete auditability and reduced configuration drift.
+
+**Streamlined Onboarding Across Clients**
+
+New client accounts could be deployed in minutes, not hours or days.
+
+**Scalable Governance Framework**
+
+Versioned Terraform modules allowed the client to evolve their cloud standards without breaking existing environments.
+
+**Reduced Operational Overhead**
+
+Engineers no longer performed manual setup, freeing time for higher-value work.
+
+## Conclusion
+
+By shifting AWS Organization management to Terraform, the client established a strong cloud governance foundation that scales with growth. Infrastructure as Code became the backbone of their multi-account strategy, bringing structure, repeatability, and compliance to an environment that previously relied on manual workflows.
