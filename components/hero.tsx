@@ -3,7 +3,7 @@ import Image from "next/image";
 
 import BootstrapCarousel from "../public/Bootstrap";
 
-import OpsFlow from "@/public/images/opsFlow.png";
+import OpsFlow from "@/public/images/opsflowlabs.png";
 import classes from "./hero.module.scss";
 import Link from "next/link";
 
