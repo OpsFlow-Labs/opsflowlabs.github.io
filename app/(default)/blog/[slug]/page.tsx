@@ -67,15 +67,6 @@ export default async function SinglePost({
                     data-aos="fade-up"
                     data-aos-delay="400"
                   >
-                    <Link href="#">
-                      <Image
-                        className="rounded-full shrink-0 mr-4"
-                        src={post.authorImg}
-                        width={40}
-                        height={40}
-                        alt={post.author}
-                      />
-                    </Link>
                     <div>
                       <Link
                         href="#"
