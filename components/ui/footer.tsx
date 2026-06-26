@@ -123,44 +123,6 @@ export default function Footer() {
                 </ul>
               </div>
 
-              {/* 4th block */}
-              <div className="text-sm">
-                <h6 className="text-gray-200 font-medium mb-1">Contact Us</h6>
-                <ul>
-                  <li className="mb-1">
-                    <span
-                      // href="/"
-                      className="text-gray-400 transition duration-150 ease-in-out"
-                    >
-                      contact@opsflowlabs.com
-                    </span>
-                  </li>
-                  {/* <li className="mb-1">
-                    <Link
-                      href="/"
-                      className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out"
-                    >
-                      Consectetur adipiscing
-                    </Link>
-                  </li> */}
-                  {/* <li className="mb-1">
-                    <Link
-                      href="/"
-                      className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out"
-                    >
-                      Labore et dolore
-                    </Link>
-                  </li>
-                  <li className="mb-1">
-                    <Link
-                      href="/"
-                      className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out"
-                    >
-                      Consectetur adipiscing
-                    </Link>
-                  </li> */}
-                </ul>
-              </div>
             </div>
           </div>
 
