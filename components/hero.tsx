@@ -104,10 +104,8 @@ export default function Hero() {
             className="flex grow justify-center md:justify-start mt-20 md:mt-0 flex-wrap items-center"
           >
             <Link
-              href="https://calendly.com/alex-opsflowlabs/consultation"
+              href="mailto:alex@opsflowlabs.com"
               className={classes.btnSchedule}
-              target="_blank"
-              rel="noopener noreferrer"
             >
               SCHEDULE FREE CONSULTATION
             </Link>
