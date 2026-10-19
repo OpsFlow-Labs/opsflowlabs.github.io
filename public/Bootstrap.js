@@ -44,7 +44,7 @@ export default function ResponsiveCarousel() {
           <div className="slide">
             <div className={styles.oneImageInSlider}>
               <img
-                src="./images/Telus.svg"
+                src="/images/Telus.svg"
                 style={{ width: "60%", height: "auto" }}
               />
             </div>
@@ -53,66 +53,7 @@ export default function ResponsiveCarousel() {
           <div className="slide">
             <div className={styles.oneImageInSlider}>
               <img
-                src="./images/zone-tv.svg"
-                style={{ width: "60%", height: "auto" }}
-              />
-            </div>
-          </div>
-
-          {/* <div className="slide">
-            <div className={styles.oneImageSirius}>
-              <img
-                src="./images/Sirius-XM.svg"
-                style={{ width: "60%", height: "auto" }}
-              />
-            </div>
-          </div> */}
-          <div className="slide">
-            <div className={styles.oneImageInSlider}>
-              <img
-                src="./images/Teesnap.svg"
-                style={{ width: "60%", height: "auto" }}
-              />
-            </div>
-          </div>
-          {/* <div className="slide">
-            <div className={styles.oneImageEnd}>
-              <img
-                src="./images/Kodo.svg"
-                style={{ width: "60%", height: "auto" }}
-              />
-            </div>
-          </div> */}
-
-          <div className="slide">
-            <div className={styles.oneImageInSlider}>
-              <img
-                src="./images/Hash-Corp.svg"
-                style={{ width: "60%", height: "auto" }}
-              />
-            </div>
-          </div>
-          <div className="slide">
-            <div className={styles.oneImageInSlider}>
-              <img
-                src="./images/DivvyBet.svg"
-                style={{ width: "60%", height: "auto" }}
-              />
-            </div>
-          </div>
-          <div className="slide">
-            <div className={styles.oneImageInSlider}>
-              <img
-                src="./images/Telus.svg"
-                style={{ width: "60%", height: "auto" }}
-              />
-            </div>
-          </div>
-
-          <div className="slide">
-            <div className={styles.oneImageInSlider}>
-              <img
-                src="./images/zone-tv.svg"
+                src="/images/zone-tv.svg"
                 style={{ width: "60%", height: "auto" }}
               />
             </div>
@@ -121,7 +62,7 @@ export default function ResponsiveCarousel() {
           {/* <div className="slide">
             <div className={styles.oneImageSirius}>
               <img
-                src="./images/Sirius-XM.svg"
+                src="/images/Sirius-XM.svg"
                 style={{ width: "60%", height: "auto" }}
               />
             </div>
@@ -129,7 +70,7 @@ export default function ResponsiveCarousel() {
           <div className="slide">
             <div className={styles.oneImageInSlider}>
               <img
-                src="./images/Teesnap.svg"
+                src="/images/Teesnap.svg"
                 style={{ width: "60%", height: "auto" }}
               />
             </div>
@@ -137,7 +78,7 @@ export default function ResponsiveCarousel() {
           {/* <div className="slide">
             <div className={styles.oneImageEnd}>
               <img
-                src="./images/Kodo.svg"
+                src="/images/Kodo.svg"
                 style={{ width: "60%", height: "auto" }}
               />
             </div>
@@ -146,7 +87,7 @@ export default function ResponsiveCarousel() {
           <div className="slide">
             <div className={styles.oneImageInSlider}>
               <img
-                src="./images/Hash-Corp.svg"
+                src="/images/Hash-Corp.svg"
                 style={{ width: "60%", height: "auto" }}
               />
             </div>
@@ -154,7 +95,66 @@ export default function ResponsiveCarousel() {
           <div className="slide">
             <div className={styles.oneImageInSlider}>
               <img
-                src="./images/DivvyBet.svg"
+                src="/images/DivvyBet.svg"
+                style={{ width: "60%", height: "auto" }}
+              />
+            </div>
+          </div>
+          <div className="slide">
+            <div className={styles.oneImageInSlider}>
+              <img
+                src="/images/Telus.svg"
+                style={{ width: "60%", height: "auto" }}
+              />
+            </div>
+          </div>
+
+          <div className="slide">
+            <div className={styles.oneImageInSlider}>
+              <img
+                src="/images/zone-tv.svg"
+                style={{ width: "60%", height: "auto" }}
+              />
+            </div>
+          </div>
+
+          {/* <div className="slide">
+            <div className={styles.oneImageSirius}>
+              <img
+                src="/images/Sirius-XM.svg"
+                style={{ width: "60%", height: "auto" }}
+              />
+            </div>
+          </div> */}
+          <div className="slide">
+            <div className={styles.oneImageInSlider}>
+              <img
+                src="/images/Teesnap.svg"
+                style={{ width: "60%", height: "auto" }}
+              />
+            </div>
+          </div>
+          {/* <div className="slide">
+            <div className={styles.oneImageEnd}>
+              <img
+                src="/images/Kodo.svg"
+                style={{ width: "60%", height: "auto" }}
+              />
+            </div>
+          </div> */}
+
+          <div className="slide">
+            <div className={styles.oneImageInSlider}>
+              <img
+                src="/images/Hash-Corp.svg"
+                style={{ width: "60%", height: "auto" }}
+              />
+            </div>
+          </div>
+          <div className="slide">
+            <div className={styles.oneImageInSlider}>
+              <img
+                src="/images/DivvyBet.svg"
                 style={{ width: "60%", height: "auto" }}
               />
             </div>

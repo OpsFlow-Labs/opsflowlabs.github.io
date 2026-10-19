@@ -5,11 +5,39 @@ import BootstrapCarousel from "../public/Bootstrap";
 
 import OpsFlow from "@/public/images/opsflowlabs.png";
 import classes from "./hero.module.scss";
-import Link from "next/link";
+import ScheduleButton, { CtaProps } from "./schedule-button";
 
 // import Slider from "react-slick";
 
-export default function Hero() {
+type HeroProps = {
+  headline?: React.ReactNode;
+  subheadline?: React.ReactNode;
+  // Pass null to hide the secondary paragraph
+  body?: React.ReactNode;
+  showImage?: boolean;
+  cta?: CtaProps;
+};
+
+export default function Hero({
+  headline = "Optimize Your Operations with Cutting Edge DevOps Solutions",
+  subheadline = (
+    <>
+      Streamline your workflows and boost efficiency… without the hassle of
+      complex implementations
+    </>
+  ),
+  body = (
+    <>
+      Unlock the potential of your business with our advanced AI-driven
+      automation tools. OpsFlow Labs delivers tailored solutions designed to
+      simplify complex processes, enhance productivity, and drive growth.
+      Transform your operations today with innovative technology that adapts to
+      your unique needs.
+    </>
+  ),
+  showImage = true,
+  cta,
+}: HeroProps) {
   return (
     <section>
       <script
@@ -64,51 +92,44 @@ export default function Hero() {
             <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
               <div className={classes.aboutParagraph}>
                 <h1 className="h1 mb-4" data-aos="fade-up">
-                  Optimize Your Operations with Cutting Edge DevOps Solutions
+                  {headline}
                 </h1>
                 <p
                   className="text-xl text-gray-400 mb-8"
                   data-aos="fade-up"
                   data-aos-delay="200"
                 >
-                  Streamline your workflows and boost efficiency… without the
-                  hassle of complex implementations
+                  {subheadline}
                 </p>
-                <p
-                  className="text-l text-gray-400 mb-8"
-                  data-aos="fade-up"
-                  data-aos-delay="200"
-                >
-                  Unlock the potential of your business with our advanced
-                  AI-driven automation tools. OpsFlow Labs delivers tailored
-                  solutions designed to simplify complex processes, enhance
-                  productivity, and drive growth. Transform your operations
-                  today with innovative technology that adapts to your unique
-                  needs.
-                </p>
+                {body && (
+                  <p
+                    className="text-l text-gray-400 mb-8"
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+                  >
+                    {body}
+                  </p>
+                )}
               </div>
             </div>
 
-            <div data-aos="fade-up" className={classes.responsiveImage}>
-              <Image
-                className="max-w-full mx-auto sm:max-w-none h-auto"
-                src={OpsFlow}
-                width={540}
-                height={405}
-                alt="Features 01"
-              />
-            </div>
+            {showImage && (
+              <div data-aos="fade-up" className={classes.responsiveImage}>
+                <Image
+                  className="max-w-full mx-auto sm:max-w-none h-auto"
+                  src={OpsFlow}
+                  width={540}
+                  height={405}
+                  alt="Features 01"
+                />
+              </div>
+            )}
           </div>
           <div
             data-aos="fade-up"
             className="flex grow justify-center md:justify-start mt-20 md:mt-0 flex-wrap items-center"
           >
-            <Link
-              href="mailto:alex@opsflowlabs.com"
-              className={classes.btnSchedule}
-            >
-              SCHEDULE FREE CONSULTATION
-            </Link>
+            <ScheduleButton {...cta} />
           </div>
           <div className={classes.carousel} data-aos="fade-up">
             <div className={classes.spotlight}>Customer Spotlight</div>
