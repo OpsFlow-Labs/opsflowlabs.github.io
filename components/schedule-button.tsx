@@ -1,5 +1,6 @@
 import Link from "next/link";
 import classes from "./hero.module.scss";
+import { BOOKING_URL } from "@/config/booking";
 
 export type CtaProps = {
   href?: string;
@@ -9,7 +10,7 @@ export type CtaProps = {
 };
 
 export default function ScheduleButton({
-  href = "mailto:alex@opsflowlabs.com",
+  href = BOOKING_URL,
   label = "SCHEDULE FREE CONSULTATION",
   dataCta,
 }: CtaProps) {
