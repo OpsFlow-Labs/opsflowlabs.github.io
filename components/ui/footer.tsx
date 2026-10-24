@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import classes from "./header.module.scss";
+import Logo from "./logo";
 
 export default function Footer() {
   return (
@@ -13,32 +13,7 @@ export default function Footer() {
             <div className="md:col-span-4 lg:col-span-5">
               <div className="mb-2">
                 {/* Logo */}
-                <a
-                  href="https://opsflowlabs.com/"
-                  className={classes.opsFlowLink}
-                  aria-label="Cruip"
-                >
-                  <div className={classes.testClass}>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="30"
-                      height="30"
-                      viewBox="0 0 32 32"
-                      fill="none"
-                    >
-                      <path
-                        fill="#8066EB"
-                        d="M28 18h2v10h-2zM24 14h2v14h-2zM20 22h2v6h-2zM22.175 10l1.585-1.266a9.952 9.952 0 0 0-5.87-3.552 10.002 10.002 0 0 0-11.72 7.933A7.505 7.505 0 0 0 .054 21.41 7.684 7.684 0 0 0 7.77 28H16v-2H7.694a5.632 5.632 0 0 1-5.602-4.486 5.506 5.506 0 0 1 4.434-6.43l1.349-.245.214-1.11a8.206 8.206 0 0 1 6.742-6.642 7.967 7.967 0 0 1 3.014.13A7.804 7.804 0 0 1 22.175 10Z"
-                      />
-                      <path
-                        d="M0 0h32v32H0z"
-                        data-name="&lt;Transparent Rectangle&gt;"
-                      />
-                    </svg>
-                    <span className={classes.logoText}>OpsFlow</span>
-                    <span className={classes.labs}>Labs</span>
-                  </div>
-                </a>
+                <Logo />
               </div>
               <div className="text-gray-400">Optimize Your Operations with Cutting Edge DevOps Solutions</div>
             </div>

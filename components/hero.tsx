@@ -35,7 +35,7 @@ export default function Hero({
       your unique needs.
     </>
   ),
-  showImage = true,
+  showImage = false,
   cta,
 }: HeroProps) {
   return (
@@ -87,9 +87,13 @@ export default function Hero({
 
         {/* Hero content */}
         <div className="relative pt-32 pb-10 md:pt-40 md:pb-16">
-          <div className={classes.aboutCompany}>
+          <div
+            className={`${classes.aboutCompany} ${showImage ? "" : classes.centered}`}
+          >
             {/* Section header */}
-            <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
+            <div
+              className={`${showImage ? "max-w-3xl" : "max-w-4xl"} mx-auto text-center pb-12 md:pb-16`}
+            >
               <div className={classes.aboutParagraph}>
                 <h1 className="h1 mb-4" data-aos="fade-up">
                   {headline}
@@ -127,7 +131,7 @@ export default function Hero({
           </div>
           <div
             data-aos="fade-up"
-            className="flex grow justify-center md:justify-start mt-20 md:mt-0 flex-wrap items-center"
+            className={`flex grow justify-center ${showImage ? "md:justify-start mt-20" : ""} md:mt-0 flex-wrap items-center`}
           >
             <ScheduleButton {...cta} />
           </div>

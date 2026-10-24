@@ -17,20 +17,19 @@
 }
 
 .logoText {
-  font-family: "Roboto", sans-serif;
-  font-size: 18px;
+  font-family: var(--font-inter), sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
   line-height: 32px;
   color: #ffffff;
-  overflow-wrap: break-word;
-  padding-left: 5px;
+  padding-left: 10px;
 }
 
 .labs {
-  font-family: "Roboto", sans-serif;
-  font-size: 18px;
-  line-height: 32px;
-  color: #8066eb;
-  overflow-wrap: break-word;
+  font-weight: 500;
+  color: #8d8dff;
+  margin-left: 5px;
 }
 
 .btnWorkWithUs {
@@ -42,7 +41,7 @@
   color: black;
   font-weight: 600;
   &:hover {
-    background-color: #8066eb;
+    background-color: #5d5dff;
     color: #ffffff;
     text-decoration: none;
   }
@@ -53,7 +52,7 @@
   margin-right: 20px;
   padding-bottom: 5px;
   &:hover {
-    border-bottom: 4px solid #8066eb;
+    border-bottom: 4px solid #5d5dff;
     color: #ffffff;
     text-decoration: none;
   }
