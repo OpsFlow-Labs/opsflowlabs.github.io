@@ -73,64 +73,36 @@ const icons = [
 
 const defaultItems: FeatureItem[] = [
   {
-    title: "Transform Faster with DevOps Consulting",
+    title: "AI-Ready DevOps and Platform Engineering",
     content: (
       <>
         <p className="text-lg text-gray-400 text-center">
-          Ready to supercharge your digital journey?
-        </p>
-        <p className="text-lg text-gray-400 text-center">
-          Our DevOps Consulting Services are designed to help you accelerate
-          your transformation. Partner with our experts to:
-        </p>
-        <ul>
-          <li className="text-lg text-gray-400 text-center">
-            Review: Evaluate your current DevOps practices.
-          </li>
-          <li className="text-lg text-gray-400 text-center">
-            Assess: Gauge your organization's maturity level.
-          </li>
-          <li className="text-lg text-gray-400 text-center">
-            Plan: Get a customized action plan for guaranteed success.
-          </li>
-        </ul>
-
-        <p className="text-lg text-gray-400 text-center mt-2">
-          Let’s streamline your operations and drive growth together!
+          We build the pipelines, cloud setup and access controls your AI
+          features run on, so your team can ship safely and keep model costs in
+          check.
         </p>
       </>
     ),
   },
   {
-    title: "Exceptional Staffing Solutions for Every Need",
+    title: "AI and Platform Engineering Talent",
     content: (
       <>
         <p className="text-lg text-gray-400 text-center">
-          Unlock the talent you need with our comprehensive Staffing Services.
-        </p>
-        <p className="text-lg text-gray-400 text-center">
-          Whether you require contract staffing, full-time hires, or temporary
-          to permanent placements, we’ve got you covered.
-        </p>
-        <p className="text-lg text-gray-400 text-center">
-          Our expert resources ensure your project’s success from start to
-          finish.
+          Experienced platform, DevOps and AI engineers who join your team on
+          contract, full-time or contract-to-hire.
         </p>
       </>
     ),
   },
   {
-    title: "Innovative Custom Development at Your Service",
+    title: "Custom AI Development",
     content: (
       <>
         <p className="text-lg text-gray-400 text-center">
-          Our dedicated full-stack engineers bring years of experience to the
-          table, delivering fully-functional, scalable projects that are always
-          on-time and on-budget.
-        </p>
-        <p className="text-lg text-gray-400 text-center">
-          Trust us to turn your vision into reality with precision and
-          efficiency
+          We design and build production-ready AI features, from LLM
+          integrations and agents to workflow automation, with security and
+          cost control built in.
         </p>
       </>
     ),
@@ -147,9 +119,12 @@ type FeaturesProps = {
 
 export default function Features({
   id = "first-section",
-  heading = "Innovative Solutions",
+  heading = "Innovative AI Solutions",
   subheading = (
-    <>We offer a variety of services to make sure your project is a success.</>
+    <>
+      From the infrastructure your AI runs on to the features your users see,
+      we help you ship AI that holds up in production.
+    </>
   ),
   items = defaultItems,
   cta,

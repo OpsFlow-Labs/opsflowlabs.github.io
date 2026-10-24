@@ -1,6 +1,7 @@
 export const metadata = {
   title: "OpsFlow Labs",
-  description: "Optimize Your Operations with Cutting Edge DevOps Solutions",
+  description:
+    "AI engineering, DevOps and cloud security to take AI features from prototype to production.",
 };
 
 import Hero from "@/components/hero";

@@ -19,20 +19,19 @@ type HeroProps = {
 };
 
 export default function Hero({
-  headline = "Optimize Your Operations with Cutting Edge DevOps Solutions",
+  headline = "Ship AI to Production, Securely and at Scale",
   subheadline = (
     <>
-      Streamline your workflows and boost efficiency… without the hassle of
-      complex implementations
+      We build the infrastructure, security and features your AI products
+      need, without the hassle of complex implementations
     </>
   ),
   body = (
     <>
-      Unlock the potential of your business with our advanced AI-driven
-      automation tools. OpsFlow Labs delivers tailored solutions designed to
-      simplify complex processes, enhance productivity, and drive growth.
-      Transform your operations today with innovative technology that adapts to
-      your unique needs.
+      OpsFlow Labs combines years of DevOps and cloud security experience with
+      hands-on AI engineering. We help teams take LLM features from prototype
+      to production with the pipelines, guardrails and cost controls they
+      need.
     </>
   ),
   showImage = false,

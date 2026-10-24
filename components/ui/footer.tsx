@@ -15,7 +15,7 @@ export default function Footer() {
                 {/* Logo */}
                 <Logo />
               </div>
-              <div className="text-gray-400">Optimize Your Operations with Cutting Edge DevOps Solutions</div>
+              <div className="text-gray-400">Ship AI to Production, Securely and at Scale</div>
             </div>
 
             {/* 2nd, 3rd and 4th blocks */}
