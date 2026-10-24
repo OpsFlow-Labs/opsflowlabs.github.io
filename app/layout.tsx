@@ -6,6 +6,8 @@ import Head from "next/head";
 import Header from "@/components/ui/header";
 import Banner from "@/components/banner";
 import PageIllustration from "@/components/page-illustration";
+import XSiteTracking from "@/components/x-site-tracking";
+import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -85,6 +87,8 @@ export default function RootLayout({
           <Header />
           {children}
         </div>
+        <XSiteTracking />
+        <Analytics />
       </body>
     </html>
   );

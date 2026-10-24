@@ -66,12 +66,6 @@ export default function CalendlyEmbed({ url, xPixelId }: Props) {
         strategy="afterInteractive"
         onReady={initWidget}
       />
-      {xPixelId && (
-        <Script
-          src="https://platform.twitter.com/oct.js"
-          strategy="afterInteractive"
-        />
-      )}
     </>
   );
 }
