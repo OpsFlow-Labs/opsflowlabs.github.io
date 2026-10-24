@@ -10,7 +10,11 @@ import Features from "@/components/features";
 import Testimonials from "@/components/testimonials";
 import News from "@/components/blog";
 import FinalCta from "@/components/final-cta";
+import XLeadPixel from "@/components/x-lead-pixel";
 import { BOOKING_URL_AI_SECURITY } from "@/config/booking";
+
+// X Ads "Lead - Booked call" conversion tag
+const X_LEAD_PIXEL_ID = "rhx6u";
 
 const cta = (id: string) => ({
   href: BOOKING_URL_AI_SECURITY,
@@ -21,6 +25,7 @@ const cta = (id: string) => ({
 export default function AiSecurity() {
   return (
     <>
+      <XLeadPixel pid={X_LEAD_PIXEL_ID} ctaPrefix="ai-security-" />
       <Hero
         headline="Ship AI Features Without Opening New Security Holes"
         subheadline="LLM integrations bring new API keys, new data flows and new permissions into your stack. We review them, find the gaps and help your team close them before a customer or an auditor finds them first."
