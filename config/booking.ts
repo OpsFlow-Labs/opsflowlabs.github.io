@@ -11,3 +11,5 @@ export const BOOKING_URL_AI_SECURITY = "/ai-security/book";
 export const BOOKING_URL_FRACTIONAL_CTO = "/fractional-cto/book";
 
 export const BOOKING_URL_CRYPTO_SECURITY = "/crypto-security/book";
+
+export const BOOKING_URL_INCIDENT = "/incident/book";
