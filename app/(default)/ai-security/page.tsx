@@ -10,6 +10,7 @@ import Features from "@/components/features";
 import Testimonials from "@/components/testimonials";
 import News from "@/components/blog";
 import FinalCta from "@/components/final-cta";
+import ChecklistSignup from "@/components/checklist-signup";
 import { BOOKING_URL_AI_SECURITY } from "@/config/booking";
 
 const cta = (id: string) => ({
@@ -27,6 +28,7 @@ export default function AiSecurity() {
         body={null}
         cta={cta("hero")}
       />
+      <ChecklistSignup source="ai-security" />
       <Features
         id="services"
         heading="What We Cover"
