@@ -26,7 +26,11 @@ export default function AiSecurity() {
         headline="Ship AI Features Without Opening New Security Holes"
         subheadline="LLM integrations bring new API keys, new data flows and new permissions into your stack. We review them, find the gaps and help your team close them before a customer or an auditor finds them first."
         body={null}
-        cta={cta("hero")}
+        cta={{
+          href: "#checklist",
+          label: "GET THE FREE AI SECURITY CHECKLIST",
+          dataCta: "ai-security-hero-checklist",
+        }}
       />
       <ChecklistSignup source="ai-security" />
       <Features

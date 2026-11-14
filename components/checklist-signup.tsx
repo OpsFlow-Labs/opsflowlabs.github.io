@@ -48,7 +48,7 @@ export default function ChecklistSignup({ source }: { source: string }) {
   };
 
   return (
-    <section>
+    <section id="checklist" className="scroll-mt-24">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="py-12 md:py-16 border-t border-gray-800">
           <div className="max-w-3xl mx-auto text-center">
